@@ -1,0 +1,9 @@
+{
+  "datasetAssetId": "dasset_1774412759_dc7acb34",
+  "name": "Stage2 Validation Dataset 1774412580",
+  "taskType": "text",
+  "status": "active",
+  "sourceType": "manual",
+  "localOrRemotePath": "/tmp/stage2-validation-1774412580",
+  "updatedAt": "2026-03-25T04:25:59.544099846Z"
+}

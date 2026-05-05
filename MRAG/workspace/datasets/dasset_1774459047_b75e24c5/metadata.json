@@ -1,0 +1,9 @@
+{
+  "datasetAssetId": "dasset_1774459047_b75e24c5",
+  "name": "Multimodal RAG with VisDoM dataset dataset asset",
+  "taskType": "multimodal",
+  "status": "active",
+  "sourceType": "manual",
+  "localOrRemotePath": "shenzhenvlab:/datasets/visdom",
+  "updatedAt": "2026-03-26T01:17:27.1034411+08:00"
+}

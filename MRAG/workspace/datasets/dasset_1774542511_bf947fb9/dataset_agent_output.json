@@ -1,0 +1,131 @@
+{
+  "agent_type": "dataset",
+  "baseline_id": "baseline_1774542511_10a05298",
+  "codex_cli_args": [
+    "--output-schema",
+    "D:\\4\\MRAG\\workspace\\agents\\jobs\\ajob_1774542511_89692a2c\\codex_cli\\output_schema.json"
+  ],
+  "codex_cli_available": false,
+  "codex_cli_command": "definitely-missing-codex-cli",
+  "data": {
+    "agent_type": "dataset",
+    "baseline_id": "baseline_1774542511_10a05298",
+    "dataset_asset_id": "dasset_1774542511_bf947fb9",
+    "dataset_constraints": {},
+    "dataset_location": "D:\\4\\MRAG\\workspace\\datasets\\downloads\\ajob_1774542511_89692a2c\\mock_dataset",
+    "discovered_dataset_count": 0,
+    "evalplan_path": "D:\\4\\MRAG\\workspace\\datasets\\dasset_1774542511_bf947fb9\\evalplan.json",
+    "input_ref_count": 1,
+    "job_id": "ajob_1774542511_89692a2c",
+    "keywords": [
+      "retrieval",
+      "benchmark"
+    ],
+    "memory_ref_count": 0,
+    "research_direction": "stage3 validation retrieval",
+    "result": "stable_mock_response",
+    "server_context": {
+      "decision_mode": "real",
+      "fallback_reason": "",
+      "gpu_available": false,
+      "selected_server_id": "srv_1774542509_1d2e9e7f",
+      "selected_server_name": "stage3-mock-server-1774542408"
+    },
+    "skill_ref_count": 0,
+    "target_server_preference": "stage3-mock-server-1774542408",
+    "task_type": "retrieval",
+    "tool_ref_count": 0
+  },
+  "dataset_asset_ref": "dasset_1774542511_bf947fb9",
+  "dataset_location": "D:\\4\\MRAG\\workspace\\datasets\\downloads\\ajob_1774542511_89692a2c\\mock_dataset",
+  "eval_protocol_json": {
+    "baseline_needed": true,
+    "data_split": {
+      "strategy": "query_document_train_dev_test",
+      "test_ratio": 0.1,
+      "train_ratio": 0.8,
+      "validation_ratio": 0.1
+    },
+    "evaluation_steps": [
+      "Validate dataset availability and schema consistency.",
+      "Prepare train/validation/test split according to split strategy.",
+      "Run at least one baseline and capture metrics in structured form.",
+      "Generate a reproducible evaluation report using the report template."
+    ],
+    "metric_list": [
+      "recall@10",
+      "mrr",
+      "ndcg@10"
+    ],
+    "report_template": {
+      "format": "markdown",
+      "sections": [
+        "Dataset Summary",
+        "Protocol",
+        "Metrics",
+        "Error Analysis",
+        "Limitations"
+      ]
+    },
+    "task_type": "retrieval"
+  },
+  "evalplan_path": "D:\\4\\MRAG\\workspace\\datasets\\dasset_1774542511_bf947fb9\\evalplan.json",
+  "execution_mode_requested": "codex_cli",
+  "execution_mode_used": "mock",
+  "executor": "DatasetCodexCLIExecutor",
+  "fallback_reason": "codex_cli_not_found",
+  "fetch_action": "mock_download",
+  "items": [
+    "recall@10",
+    "mrr",
+    "ndcg@10"
+  ],
+  "job_id": "ajob_1774542511_89692a2c",
+  "memory_key": "dataset_evalplan_dasset_1774542511_bf947fb9",
+  "metadata": {
+    "config_sources": [
+      ".env / environment variables (CODEX_CLI_*)",
+      "runtime config file (AGENT_RUNTIME_CONFIG_FILE or backend/python_agents/runtime/config.local.json)",
+      "database config table hook (reserved extension point)"
+    ],
+    "fallback": true,
+    "source": "mock_executor",
+    "synthetic": true
+  },
+  "metric_schema_json": {
+    "direction": "maximize",
+    "metric_list": [
+      "recall@10",
+      "mrr",
+      "ndcg@10"
+    ],
+    "primary_metric": "recall@10"
+  },
+  "model_name": "stage3-dataset-validation",
+  "model_provider": "codex",
+  "notes_md": "No sufficiently matched existing dataset was selected, so the agent plans a controlled mock download. Server context: stage3-mock-server-1774542408.",
+  "notes_path": "D:\\4\\MRAG\\workspace\\datasets\\dasset_1774542511_bf947fb9\\dataset_agent_notes.md",
+  "output_schema_ref": "schemas/dataset-output-v1.json",
+  "prompt_version": "v1",
+  "response_json": {
+    "agent_type": "dataset",
+    "input_ref_count": 1,
+    "job_id": "ajob_1774542511_89692a2c",
+    "memory_ref_count": 0,
+    "result": "stable_mock_response",
+    "skill_ref_count": 0,
+    "tool_ref_count": 0
+  },
+  "response_text": "stable mock response for agent=dataset, job=ajob_1774542511_89692a2c, schema=schemas/dataset-output-v1.json",
+  "runtime_output_path": "D:\\4\\MRAG\\workspace\\datasets\\dasset_1774542511_bf947fb9\\dataset_agent_output.json",
+  "selected_dataset_ref": "",
+  "server_decision": {
+    "decision_mode": "real",
+    "fallback_reason": "",
+    "gpu_available": false,
+    "selected_server_name": "stage3-mock-server-1774542408"
+  },
+  "split_strategy": "query_document_train_dev_test",
+  "summary": "Stable mock output for dataset.",
+  "workspace_dir": "D:\\4\\MRAG\\workspace\\agents\\jobs\\ajob_1774542511_89692a2c"
+}

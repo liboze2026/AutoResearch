@@ -1,0 +1,303 @@
+{
+  "attempt": 4,
+  "attempts_used": 4,
+  "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+  "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+  "error": "attempt 4 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+  "failure_history": [
+    {
+      "attempt": 1,
+      "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+      "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+      "error": "attempt 1 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+      "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+      "max_retry_count": 3,
+      "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+      "recorded_at": "2026-03-27T10:43:15.5208203+08:00",
+      "run_manifest_id": "p4run_1774579093_f51f0b2e",
+      "stage": "shenzhenvlab_remote_run"
+    },
+    {
+      "attempt": 2,
+      "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+      "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+      "error": "attempt 2 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+      "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+      "max_retry_count": 3,
+      "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+      "previous_failures": [
+        {
+          "attempt": 1,
+          "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+          "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+          "error": "attempt 1 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+          "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+          "max_retry_count": 3,
+          "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+          "recorded_at": "2026-03-27T10:43:15.5208203+08:00",
+          "run_manifest_id": "p4run_1774579093_f51f0b2e",
+          "stage": "shenzhenvlab_remote_run"
+        }
+      ],
+      "recorded_at": "2026-03-27T10:47:37.0607719+08:00",
+      "run_manifest_id": "p4run_1774579093_f51f0b2e",
+      "stage": "shenzhenvlab_remote_run"
+    },
+    {
+      "attempt": 3,
+      "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+      "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+      "error": "attempt 3 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+      "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+      "max_retry_count": 3,
+      "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+      "previous_failures": [
+        {
+          "attempt": 1,
+          "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+          "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+          "error": "attempt 1 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+          "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+          "max_retry_count": 3,
+          "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+          "recorded_at": "2026-03-27T10:43:15.5208203+08:00",
+          "run_manifest_id": "p4run_1774579093_f51f0b2e",
+          "stage": "shenzhenvlab_remote_run"
+        },
+        {
+          "attempt": 2,
+          "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+          "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+          "error": "attempt 2 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+          "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+          "max_retry_count": 3,
+          "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+          "previous_failures": [
+            {
+              "attempt": 1,
+              "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+              "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+              "error": "attempt 1 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+              "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+              "max_retry_count": 3,
+              "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+              "recorded_at": "2026-03-27T10:43:15.5208203+08:00",
+              "run_manifest_id": "p4run_1774579093_f51f0b2e",
+              "stage": "shenzhenvlab_remote_run"
+            }
+          ],
+          "recorded_at": "2026-03-27T10:47:37.0607719+08:00",
+          "run_manifest_id": "p4run_1774579093_f51f0b2e",
+          "stage": "shenzhenvlab_remote_run"
+        }
+      ],
+      "recorded_at": "2026-03-27T10:53:23.2044566+08:00",
+      "run_manifest_id": "p4run_1774579093_f51f0b2e",
+      "stage": "shenzhenvlab_remote_run"
+    },
+    {
+      "attempt": 4,
+      "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+      "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+      "error": "attempt 4 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+      "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+      "max_retry_count": 3,
+      "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+      "previous_failures": [
+        {
+          "attempt": 1,
+          "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+          "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+          "error": "attempt 1 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+          "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+          "max_retry_count": 3,
+          "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+          "recorded_at": "2026-03-27T10:43:15.5208203+08:00",
+          "run_manifest_id": "p4run_1774579093_f51f0b2e",
+          "stage": "shenzhenvlab_remote_run"
+        },
+        {
+          "attempt": 2,
+          "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+          "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+          "error": "attempt 2 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+          "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+          "max_retry_count": 3,
+          "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+          "previous_failures": [
+            {
+              "attempt": 1,
+              "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+              "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+              "error": "attempt 1 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+              "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+              "max_retry_count": 3,
+              "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+              "recorded_at": "2026-03-27T10:43:15.5208203+08:00",
+              "run_manifest_id": "p4run_1774579093_f51f0b2e",
+              "stage": "shenzhenvlab_remote_run"
+            }
+          ],
+          "recorded_at": "2026-03-27T10:47:37.0607719+08:00",
+          "run_manifest_id": "p4run_1774579093_f51f0b2e",
+          "stage": "shenzhenvlab_remote_run"
+        },
+        {
+          "attempt": 3,
+          "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+          "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+          "error": "attempt 3 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+          "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+          "max_retry_count": 3,
+          "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+          "previous_failures": [
+            {
+              "attempt": 1,
+              "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+              "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+              "error": "attempt 1 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+              "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+              "max_retry_count": 3,
+              "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+              "recorded_at": "2026-03-27T10:43:15.5208203+08:00",
+              "run_manifest_id": "p4run_1774579093_f51f0b2e",
+              "stage": "shenzhenvlab_remote_run"
+            },
+            {
+              "attempt": 2,
+              "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+              "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+              "error": "attempt 2 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+              "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+              "max_retry_count": 3,
+              "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+              "previous_failures": [
+                {
+                  "attempt": 1,
+                  "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+                  "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+                  "error": "attempt 1 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+                  "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+                  "max_retry_count": 3,
+                  "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+                  "recorded_at": "2026-03-27T10:43:15.5208203+08:00",
+                  "run_manifest_id": "p4run_1774579093_f51f0b2e",
+                  "stage": "shenzhenvlab_remote_run"
+                }
+              ],
+              "recorded_at": "2026-03-27T10:47:37.0607719+08:00",
+              "run_manifest_id": "p4run_1774579093_f51f0b2e",
+              "stage": "shenzhenvlab_remote_run"
+            }
+          ],
+          "recorded_at": "2026-03-27T10:53:23.2044566+08:00",
+          "run_manifest_id": "p4run_1774579093_f51f0b2e",
+          "stage": "shenzhenvlab_remote_run"
+        }
+      ],
+      "recorded_at": "2026-03-27T10:58:33.7360645+08:00",
+      "run_manifest_id": "p4run_1774579093_f51f0b2e",
+      "stage": "shenzhenvlab_remote_run"
+    }
+  ],
+  "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+  "max_retry_count": 3,
+  "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+  "previous_failures": [
+    {
+      "attempt": 1,
+      "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+      "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+      "error": "attempt 1 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+      "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+      "max_retry_count": 3,
+      "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+      "recorded_at": "2026-03-27T10:43:15.5208203+08:00",
+      "run_manifest_id": "p4run_1774579093_f51f0b2e",
+      "stage": "shenzhenvlab_remote_run"
+    },
+    {
+      "attempt": 2,
+      "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+      "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+      "error": "attempt 2 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+      "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+      "max_retry_count": 3,
+      "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+      "previous_failures": [
+        {
+          "attempt": 1,
+          "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+          "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+          "error": "attempt 1 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+          "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+          "max_retry_count": 3,
+          "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+          "recorded_at": "2026-03-27T10:43:15.5208203+08:00",
+          "run_manifest_id": "p4run_1774579093_f51f0b2e",
+          "stage": "shenzhenvlab_remote_run"
+        }
+      ],
+      "recorded_at": "2026-03-27T10:47:37.0607719+08:00",
+      "run_manifest_id": "p4run_1774579093_f51f0b2e",
+      "stage": "shenzhenvlab_remote_run"
+    },
+    {
+      "attempt": 3,
+      "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+      "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+      "error": "attempt 3 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+      "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+      "max_retry_count": 3,
+      "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+      "previous_failures": [
+        {
+          "attempt": 1,
+          "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+          "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+          "error": "attempt 1 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+          "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+          "max_retry_count": 3,
+          "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+          "recorded_at": "2026-03-27T10:43:15.5208203+08:00",
+          "run_manifest_id": "p4run_1774579093_f51f0b2e",
+          "stage": "shenzhenvlab_remote_run"
+        },
+        {
+          "attempt": 2,
+          "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+          "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+          "error": "attempt 2 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+          "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+          "max_retry_count": 3,
+          "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+          "previous_failures": [
+            {
+              "attempt": 1,
+              "config_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\config.json",
+              "driver_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\driver.log",
+              "error": "attempt 1 failed at shenzhenvlab_remote_run: phase4 remote run failed",
+              "logs_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs",
+              "max_retry_count": 3,
+              "method_module": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\snapshot\\methods\\generated\\visdom_real_page_retrieval_20260327_layout_aware_hard_negative_mining.py",
+              "recorded_at": "2026-03-27T10:43:15.5208203+08:00",
+              "run_manifest_id": "p4run_1774579093_f51f0b2e",
+              "stage": "shenzhenvlab_remote_run"
+            }
+          ],
+          "recorded_at": "2026-03-27T10:47:37.0607719+08:00",
+          "run_manifest_id": "p4run_1774579093_f51f0b2e",
+          "stage": "shenzhenvlab_remote_run"
+        }
+      ],
+      "recorded_at": "2026-03-27T10:53:23.2044566+08:00",
+      "run_manifest_id": "p4run_1774579093_f51f0b2e",
+      "stage": "shenzhenvlab_remote_run"
+    }
+  ],
+  "recorded_at": "2026-03-27T10:58:33.7360645+08:00",
+  "repair_log_path": "D:\\4\\MRAG\\workspace\\phase4\\runs\\p4run_1774579093_f51f0b2e\\logs\\repair.jsonl",
+  "run_manifest_id": "p4run_1774579093_f51f0b2e",
+  "stage": "shenzhenvlab_remote_run",
+  "status": "test_failed"
+}

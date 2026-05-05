@@ -1,0 +1,4 @@
+[
+  "Current parser and extractor are mock and deterministic.",
+  "No real NLP or PDF structure recovery is performed in stage 1."
+]

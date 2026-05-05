@@ -1,0 +1,196 @@
+{
+  "status": "succeeded",
+  "normalized_payload": {
+    "job_id": "reader_real_codex_visdom_001",
+    "agent_type": "reader",
+    "execution_mode_requested": "codex_cli",
+    "execution_mode_used": "codex_cli",
+    "model_provider": "codex",
+    "model_name": "gpt-5.4-mini",
+    "prompt_version": "v1",
+    "output_schema_ref": "schemas/reader-output-v1.json",
+    "workspace_dir": "D:\\3\\MRAG\\workspace\\validation\\reader_real_codex_job",
+    "executor": "ReaderCodexCLIExecutor",
+    "summary": "{\"candidate_papers\": [{\"title\":\"\",\"abstract\":\"\",\"source\":\"\",\"year\":0,\"url\":\"\",\"file_status\":\"\",\"file_path\":\"\"}]}",
+    "items": [
+      {
+        "title": "Untitled Candidate",
+        "abstract": "",
+        "source": "mixed",
+        "year": 2026,
+        "url": "",
+        "file_status": "metadata_only"
+      }
+    ],
+    "data": {
+      "candidate_papers": [
+        {
+          "title": "",
+          "abstract": "",
+          "source": "",
+          "year": 0,
+          "url": "",
+          "file_status": "",
+          "file_path": ""
+        }
+      ],
+      "reader_request": {
+        "research_direction": "multimodal RAG with VisDoM dataset",
+        "keywords": [
+          "multimodal rag",
+          "visdom",
+          "vision-language retrieval"
+        ],
+        "source_scope": "mixed",
+        "time_range": {
+          "end_year": 2026
+        },
+        "max_papers": 1,
+        "manual_paper_count": 0
+      }
+    },
+    "metadata": {
+      "codex_cli_output_mode": "stdout",
+      "config_sources": [
+        ".env / environment variables (CODEX_CLI_*)",
+        "runtime config file (AGENT_RUNTIME_CONFIG_FILE or backend/python_agents/runtime/config.local.json)",
+        "database config table hook (reserved extension point)"
+      ]
+    },
+    "response_text": "{\"candidate_papers\": [{\"title\":\"\",\"abstract\":\"\",\"source\":\"\",\"year\":0,\"url\":\"\",\"file_status\":\"\",\"file_path\":\"\"}]}",
+    "response_json": {
+      "candidate_papers": [
+        {
+          "title": "",
+          "abstract": "",
+          "source": "",
+          "year": 0,
+          "url": "",
+          "file_status": "",
+          "file_path": ""
+        }
+      ]
+    },
+    "codex_cli_command": "C:\\Users\\Zionjuer\\.vscode\\extensions\\openai.chatgpt-26.323.20928-win32-x64\\bin\\windows-x86_64\\codex.exe",
+    "codex_cli_args": [
+      "--sandbox",
+      "read-only",
+      "--ask-for-approval",
+      "never",
+      "exec",
+      "--ephemeral",
+      "-m",
+      "gpt-5.4-mini",
+      "-c",
+      "model_reasoning_effort=\"low\"",
+      "-C",
+      "D:\\3\\MRAG",
+      "--skip-git-repo-check",
+      "--output-last-message",
+      "D:\\3\\MRAG\\workspace\\validation\\reader_real_codex_job\\codex_cli\\response.txt",
+      "--output-schema",
+      "D:\\3\\MRAG\\workspace\\validation\\reader_real_codex_job\\codex_cli\\output_schema.json"
+    ],
+    "codex_cli_output_mode": "stdout",
+    "candidate_papers": [
+      {
+        "title": "Untitled Candidate",
+        "abstract": "",
+        "source": "mixed",
+        "year": 2026,
+        "url": "",
+        "file_status": "metadata_only"
+      }
+    ]
+  },
+  "artifact_manifest": [
+    {
+      "artifact_type": "codex_prompt",
+      "name": "prompt.txt",
+      "file_path": "D:\\3\\MRAG\\workspace\\validation\\reader_real_codex_job\\codex_cli\\prompt.txt",
+      "metadata": {
+        "role": "codex_cli_prompt"
+      }
+    },
+    {
+      "artifact_type": "codex_stdout",
+      "name": "stdout.txt",
+      "file_path": "D:\\3\\MRAG\\workspace\\validation\\reader_real_codex_job\\codex_cli\\stdout.txt",
+      "metadata": {
+        "role": "codex_cli_stdout"
+      }
+    },
+    {
+      "artifact_type": "codex_stderr",
+      "name": "stderr.txt",
+      "file_path": "D:\\3\\MRAG\\workspace\\validation\\reader_real_codex_job\\codex_cli\\stderr.txt",
+      "metadata": {
+        "role": "codex_cli_stderr"
+      }
+    },
+    {
+      "artifact_type": "codex_output",
+      "name": "response.txt",
+      "file_path": "D:\\3\\MRAG\\workspace\\validation\\reader_real_codex_job\\codex_cli\\response.txt",
+      "metadata": {
+        "role": "codex_cli_output"
+      }
+    },
+    {
+      "artifact_type": "input_contract",
+      "name": "input.json",
+      "file_path": "D:\\3\\MRAG\\workspace\\validation\\reader_real_codex_job\\input.json",
+      "metadata": {
+        "role": "runtime_input"
+      }
+    },
+    {
+      "artifact_type": "output_contract",
+      "name": "output.json",
+      "file_path": "D:\\3\\MRAG\\workspace\\validation\\reader_real_codex_job\\output.json",
+      "metadata": {
+        "role": "runtime_output"
+      }
+    }
+  ],
+  "repair_actions": [],
+  "tool_usages": [
+    {
+      "tool_ref": "codex_cli",
+      "status": "succeeded",
+      "summary": "Executed Codex CLI successfully.",
+      "metadata": {
+        "command": "C:\\Users\\Zionjuer\\.vscode\\extensions\\openai.chatgpt-26.323.20928-win32-x64\\bin\\windows-x86_64\\codex.exe",
+        "args": [
+          "--sandbox",
+          "read-only",
+          "--ask-for-approval",
+          "never",
+          "exec",
+          "--ephemeral",
+          "-m",
+          "gpt-5.4-mini",
+          "-c",
+          "model_reasoning_effort=\"low\"",
+          "-C",
+          "D:\\3\\MRAG",
+          "--skip-git-repo-check",
+          "--output-last-message",
+          "D:\\3\\MRAG\\workspace\\validation\\reader_real_codex_job\\codex_cli\\response.txt",
+          "--output-schema",
+          "D:\\3\\MRAG\\workspace\\validation\\reader_real_codex_job\\codex_cli\\output_schema.json"
+        ],
+        "config_sources": [
+          ".env / environment variables (CODEX_CLI_*)",
+          "runtime config file (AGENT_RUNTIME_CONFIG_FILE or backend/python_agents/runtime/config.local.json)",
+          "database config table hook (reserved extension point)"
+        ]
+      }
+    }
+  ],
+  "warnings": [],
+  "validation_status": "succeeded",
+  "repair_status": "not_needed",
+  "validation_errors": [],
+  "error_message": ""
+}

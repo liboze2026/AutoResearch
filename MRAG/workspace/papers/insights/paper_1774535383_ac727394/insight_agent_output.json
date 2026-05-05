@@ -1,0 +1,27 @@
+{
+  "contributions_json": [
+    "Frames stage3 validation retrieval: Retrieval Study 1 as a reusable research asset instead of a transient document.",
+    "Separates ingestion, parsing, schema validation, and downstream automation into controlled stages."
+  ],
+  "extract_error": "",
+  "extract_mode": "codex_cli",
+  "extract_status": "completed",
+  "focus": "method",
+  "limitations_json": [
+    "Current insight generation can still rely on mock or fallback execution paths.",
+    "Novelty and contribution extraction remain shallow when no real model call is enabled."
+  ],
+  "methods_json": [
+    "Use parsed markdown as the stable intermediate representation.",
+    "Use schema-first validation and repair before persisting insights.",
+    "Prefer deterministic workspace artifacts to preserve auditability."
+  ],
+  "novelty_points": [
+    "stage3 validation retrieval: Retrieval Study 1 treats insight extraction as a controlled node inside a larger research pipeline.",
+    "The output is designed to be persisted, validated, repaired, and consumed by downstream agents."
+  ],
+  "paper_id": "paper_1774535383_ac727394",
+  "parsed_content_ref": "D:\\4\\MRAG\\workspace\\papers\\parsed\\paper_1774535383_ac727394\\parsed.md",
+  "source_ref": "insight_agent_runtime",
+  "summary_md": "stage3 validation retrieval: Retrieval Study 1 focuses on a controlled method pipeline with reproducible parsing, validation, and research asset persistence."
+}

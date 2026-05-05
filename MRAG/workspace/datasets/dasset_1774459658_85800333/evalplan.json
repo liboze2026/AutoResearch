@@ -1,0 +1,65 @@
+{
+  "dataset_asset_id": "dasset_1774459658_85800333",
+  "dataset_location": "shenzhenvlab:/datasets/VisDoM",
+  "fetch_action": "register_existing",
+  "selected_dataset_ref": "VisDoM",
+  "server_decision": {
+    "decision_mode": "real",
+    "fallback_reason": "",
+    "gpu_available": true,
+    "selected_server_name": "shenzhenvlab"
+  },
+  "eval_protocol_json": {
+    "baseline_needed": true,
+    "data_split": {
+      "strategy": "use provided benchmark split",
+      "test_ratio": 0.2,
+      "train_ratio": 0.7,
+      "validation_ratio": 0.1
+    },
+    "evaluation_steps": [
+      "Load VisDoM queries, candidate documents, and visual assets.",
+      "Encode text and visual inputs with the multimodal retriever.",
+      "Retrieve top-k document candidates per query.",
+      "Score against the labeled relevant document(s) per query.",
+      "Aggregate retrieval metrics over the test split."
+    ],
+    "metric_list": [
+      "Recall@1",
+      "Recall@5",
+      "MRR",
+      "nDCG@10"
+    ],
+    "report_template": {
+      "format": "standard",
+      "sections": [
+        "Dataset",
+        "Setup",
+        "Metrics",
+        "Results",
+        "Error Analysis"
+      ]
+    },
+    "task_type": "multimodal"
+  },
+  "metric_schema_json": {
+    "direction": "higher_is_better",
+    "metric_list": [
+      "Recall@1",
+      "Recall@5",
+      "MRR",
+      "nDCG@10"
+    ],
+    "primary_metric": "Recall@1"
+  },
+  "split_strategy": "use existing VisDoM benchmark split",
+  "notes_md": "Strong match found for the requested multimodal visual document retrieval setting. Register the existing VisDoM dataset on shenzhenvlab; no fetch needed beyond registration.",
+  "evalplan_path": "D:\\3\\MRAG\\workspace\\datasets\\dasset_1774459658_85800333\\evalplan.json",
+  "notes_path": "D:\\3\\MRAG\\workspace\\datasets\\dasset_1774459658_85800333\\dataset_agent_notes.md",
+  "runtime_output_path": "D:\\3\\MRAG\\workspace\\datasets\\dasset_1774459658_85800333\\dataset_agent_output.json",
+  "baseline_id": "baseline_1774459658_44cdce0c",
+  "baseline_needed": true,
+  "memory_key": "dataset_evalplan_dasset_1774459658_85800333",
+  "target_server_name": "shenzhenvlab",
+  "generated_at": "2026-03-26T01:27:38.2075412+08:00"
+}

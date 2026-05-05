@@ -1,0 +1,3 @@
+- Detected modality: text
+- Known file types: map[other:2 pdf:1419 text:6]
+- Hierarchy summary items: 8

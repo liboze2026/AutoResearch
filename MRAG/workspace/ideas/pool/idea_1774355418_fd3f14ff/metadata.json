@@ -1,0 +1,24 @@
+{
+  "ideaId": "idea_1774355418_fd3f14ff",
+  "title": "Reframe Stage1 Flow Demo Paper for a narrower benchmark",
+  "descriptionMd": "## Hypothesis\nAdapt Frames Stage1 Flow Demo Paper as a manageable research asset. into a lighter benchmark setting.\n\n## Why now\nStage1 Flow Demo Paper is summarized by the stage 1 mock insight extractor as a paper about structured research asset management and controllable parsing workflows.\n\n## Starting point\nReuse Use deterministic workspace artifacts for auditability. as the initial implementation anchor.",
+  "status": "draft",
+  "weight": 78,
+  "priority": 85,
+  "confidence": 0.74,
+  "sourceType": "auto",
+  "generatedFrom": "paper:paper_1774354462_23ffec2a",
+  "sourceSnapshot": [
+    {
+      "id": 0,
+      "ideaId": "idea_1774355418_fd3f14ff",
+      "paperId": "paper_1774354462_23ffec2a",
+      "paperInsightId": "pinsight_1774354463_a2f7c3be",
+      "sourceNote": "mock idea #1 generated from paper insight summary",
+      "paperTitle": "Stage1 Flow Demo Paper",
+      "createdAt": "2026-03-24T12:30:18.827625354Z",
+      "updatedAt": "2026-03-24T12:30:18.827625354Z"
+    }
+  ],
+  "updatedAt": "2026-03-24T12:30:18.827625354Z"
+}

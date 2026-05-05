@@ -1,0 +1,15 @@
+﻿{
+  "job_id": "demo-codex-fallback-001",
+  "agent_type": "reader",
+  "execution_mode": "codex_cli",
+  "model_provider": "codex",
+  "model_name": "contract-test",
+  "prompt_version": "v1",
+  "input_refs": [],
+  "output_schema_ref": "schemas/reader-output-v1.json",
+  "skill_refs": ["skills/reader/base"],
+  "tool_refs": ["tools/fs.read"],
+  "memory_refs": ["memory/session/demo"],
+  "workspace_dir": "D:/3/MRAG/workspace/agents/jobs/demo-codex-fallback-001",
+  "metadata": {"source": "manual-codex-fallback-demo"}
+}

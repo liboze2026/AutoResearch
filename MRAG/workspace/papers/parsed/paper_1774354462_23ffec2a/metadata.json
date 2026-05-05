@@ -1,0 +1,12 @@
+{
+  "title": "Stage1 Flow Demo Paper",
+  "abstract": "Mock abstract for Stage1 Flow Demo Paper. This stage 1 parser produces deterministic metadata and markdown artifacts and is intended to be replaced by a real PDF parser later.",
+  "authors": "Mock Author",
+  "venue": "",
+  "year": 0,
+  "status": "parsed",
+  "parse_mode": "python_mock_v1",
+  "mock_parsed": true,
+  "parser_note": "Current parsing is mock-based: title comes from heading or file name, abstract/authors are placeholders.",
+  "paper_file": "/app/workspace/papers/incoming/stage1_flow_demo.md"
+}

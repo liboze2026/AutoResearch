@@ -1,0 +1,16 @@
+{
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "run_id",
+    "dataset_profile_id",
+    "idea_id",
+    "run_dir",
+    "snapshot_dir",
+    "artifact_dir",
+    "logs_dir",
+    "config_path",
+    "metrics_path",
+    "predictions_path"
+  ]
+}

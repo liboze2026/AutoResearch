@@ -1,0 +1,28 @@
+{
+  "job_id": "reader_real_codex_visdom_001",
+  "agent_type": "reader",
+  "execution_mode": "codex_cli",
+  "model_provider": "codex",
+  "model_name": "gpt-5.4-mini",
+  "prompt_version": "v1",
+  "input_refs": [],
+  "output_schema_ref": "schemas/reader-output-v1.json",
+  "skill_refs": [],
+  "tool_refs": [],
+  "memory_refs": [],
+  "workspace_dir": "D:\\3\\MRAG\\workspace\\validation\\reader_real_codex_job",
+  "metadata": {
+    "research_direction": "multimodal RAG with VisDoM dataset",
+    "keywords": [
+      "multimodal rag",
+      "visdom",
+      "vision-language retrieval"
+    ],
+    "source_scope": "mixed",
+    "time_range": {
+      "end_year": 2026
+    },
+    "max_papers": 1,
+    "manual_papers": []
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "ideaId": "idea_1774412347_128fdad3",
+  "title": "Stage2 Validation Idea 1774411104",
+  "descriptionMd": "Validation idea for stage2 automation.",
+  "status": "draft",
+  "weight": 70,
+  "priority": 80,
+  "confidence": 0.7,
+  "sourceType": "human",
+  "generatedFrom": "manual",
+  "sourceSnapshot": [
+    {
+      "id": 0,
+      "ideaId": "idea_1774412347_128fdad3",
+      "sourceNote": "stage2 validation",
+      "createdAt": "2026-03-25T04:19:07.728956642Z",
+      "updatedAt": "2026-03-25T04:19:07.728956642Z"
+    }
+  ],
+  "updatedAt": "2026-03-25T04:19:07.728956642Z"
+}

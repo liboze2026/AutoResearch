@@ -1,0 +1,6 @@
+{
+  "primary": "accuracy",
+  "secondary": [
+    "loss"
+  ]
+}

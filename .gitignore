@@ -1,0 +1,65 @@
+# ====== Dependencies ======
+**/node_modules/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# ====== Build output ======
+**/dist/
+**/build/
+*.exe
+*.out
+mrag-server-linux
+
+# ====== Caches ======
+**/.gocache/
+**/.gomodcache/
+**/.docker-tmp/
+.cache/
+.vite/
+.parcel-cache/
+
+# ====== Logs ======
+*.log
+*.err.log
+*.out.log
+**/.stage3-logs/
+**/.stage2-frontend.log
+**/.stage2-frontend.err.log
+**/.stage2_validate_state
+**/.phase4-acceptance-logs/
+**/.real-run-logs/
+**/tmp_test_script.sh
+
+# ====== Local IDE / OS ======
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ====== Secrets / env ======
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
+**/.token_seed
+**/.token_seed.lock
+
+# ====== Runtime workspace artifacts (large; not source) ======
+MRAG/workspace/agents/jobs/
+MRAG/workspace/phase4/runs/
+MRAG/workspace/smoke/
+MRAG/workspace/experiments/
+MRAG/workspace/results/
+MRAG/workspace/backups/
+MRAG/workspace/python-runtime-tests/
+MRAG/workspace/tmp/
+MRAG/workspace/logs/
+workspace/agents/jobs/
+
+# ====== Misc ======
+*.bak
+*.swp
+*~

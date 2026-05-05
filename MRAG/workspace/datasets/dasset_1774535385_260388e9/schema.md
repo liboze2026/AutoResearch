@@ -1,0 +1,2 @@
+- Split strategy: query_document_train_dev_test
+- Metric list: recall@10, mrr, ndcg@10

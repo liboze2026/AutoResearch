@@ -1,0 +1,81 @@
+{
+  "ideaId": "idea_1774459652_21f0abd4",
+  "title": "Query-Conditioned Layout Token Retrieval for Visual Documents",
+  "descriptionMd": "Build a small retrieval baseline that converts each page into a compact sequence of layout tokens (text blocks, figures, tables, reading order, and coarse geometry) and matches queries against those tokens with a lightweight dual encoder. The scope is intentionally narrow: one encoder for the query, one encoder for page layout, and late interaction scoring, aimed at improving visual document retrieval when OCR text alone is weak.",
+  "status": "draft",
+  "weight": 44,
+  "priority": 0,
+  "confidence": 0.44,
+  "sourceType": "auto",
+  "generatedFrom": "idea_generator_agent",
+  "sourceSnapshot": [
+    {
+      "id": 0,
+      "ideaId": "idea_1774459652_21f0abd4",
+      "paperId": "paper_1774459454_ae352c82",
+      "paperInsightId": "pinsight_1774459571_1afeeb00",
+      "sourceNote": "idea generator insight event source",
+      "createdAt": "2026-03-26T01:27:32.4861574+08:00",
+      "updatedAt": "2026-03-26T01:27:32.4861574+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774459652_21f0abd4",
+      "sourceNote": "dataset_asset:VisDoM",
+      "createdAt": "2026-03-26T01:27:32.4861574+08:00",
+      "updatedAt": "2026-03-26T01:27:32.4861574+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774459652_21f0abd4",
+      "sourceNote": "dataset_eval_protocol:Recall@1",
+      "createdAt": "2026-03-26T01:27:32.4861574+08:00",
+      "updatedAt": "2026-03-26T01:27:32.4861574+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774459652_21f0abd4",
+      "sourceNote": "dataset_eval_protocol:Recall@5",
+      "createdAt": "2026-03-26T01:27:32.4861574+08:00",
+      "updatedAt": "2026-03-26T01:27:32.4861574+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774459652_21f0abd4",
+      "sourceNote": "dataset_eval_protocol:MRR",
+      "createdAt": "2026-03-26T01:27:32.4861574+08:00",
+      "updatedAt": "2026-03-26T01:27:32.4861574+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774459652_21f0abd4",
+      "sourceNote": "dataset_eval_protocol:nDCG@10",
+      "createdAt": "2026-03-26T01:27:32.4861574+08:00",
+      "updatedAt": "2026-03-26T01:27:32.4861574+08:00"
+    }
+  ],
+  "structuredIdea": {
+    "title": "Query-Conditioned Layout Token Retrieval for Visual Documents",
+    "description_md": "Build a small retrieval baseline that converts each page into a compact sequence of layout tokens (text blocks, figures, tables, reading order, and coarse geometry) and matches queries against those tokens with a lightweight dual encoder. The scope is intentionally narrow: one encoder for the query, one encoder for page layout, and late interaction scoring, aimed at improving visual document retrieval when OCR text alone is weak.",
+    "research_direction": "Use page-level visual/layout representations as the primary retrieval signal, with a controlled ablation against text-only and image-only baselines on a benchmark like VisDoM.",
+    "target_dataset_refs": [
+      "VisDoM"
+    ],
+    "dataset_eval_protocol_refs": [
+      "Recall@1",
+      "Recall@5",
+      "MRR",
+      "nDCG@10"
+    ],
+    "innovation_type": "Representation + retrieval baseline",
+    "expected_advantage": "Should outperform text-only retrieval on visually anchored queries by preserving spatial structure and non-text elements while remaining simple enough for a controlled experiment.",
+    "risk_points": [
+      "The available paper parse is mock metadata, so benchmark details may need verification before implementation.",
+      "If queries are mostly semantic text queries, gains from layout tokens may be small.",
+      "Page-level tokenization may miss fine-grained figure or table content."
+    ],
+    "priority": 0,
+    "confidence": 0.44
+  },
+  "updatedAt": "2026-03-26T01:27:32.4861574+08:00"
+}

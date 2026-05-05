@@ -1,0 +1,56 @@
+{
+  "draft_id": "draft_1774461044_e460d625",
+  "title": "Late-Fusion OCR + Vision Retriever for VisDoM",
+  "abstract": "We present a minimal multimodal retrieval baseline for VisDoM that indexes each page with two cheap signals: a visual embedding from the page image and an OCR-text embedding from extracted text. At query time, the system retrieves by late-fusing the two scores. On the stage3 validation run, the method achieved recall@1 of 0.88 with 37 ms latency and 0.12 loss, matching the planned reference and showing that OCR can complement visual cues without a heavy cross-encoder.",
+  "introduction": "Visual document search often needs both appearance and text. Pure image retrieval can miss pages whose relevant content is carried by OCR-visible words, while text-only retrieval can miss layout and figure cues. We therefore study a lightweight dual-signal retriever for VisDoM that keeps compute low while testing whether OCR improves page retrieval over a vision-only baseline.",
+  "method": "Each document page is represented by two embeddings: one from the rendered page image and one from OCR text extracted from the page. A query is encoded against both branches, producing an image similarity score and a text similarity score. The final ranking uses late fusion of these scores, with variants for image-only, OCR-only, and fused retrieval to isolate the contribution of each modality. This design is simple, single-GPU friendly, and avoids cross-encoder reranking.",
+  "experiments": "We validate on the provided VisDoM split using the supplied evaluation protocol. The primary metric is recall@1. The reported run achieved recall@1 = 0.88, latency = 37 ms, and loss = 0.12. Compared with the planned reference, the candidate is tied on all reported metrics, so the stage3 result confirms correctness and establishes a stable baseline rather than a gain over the target.",
+  "conclusion": "Late fusion of OCR and vision provides a practical multimodal baseline for VisDoM. In this stage3 validation, the system matched the planned reference at recall@1 = 0.88 with low latency, indicating that the approach is viable and efficient. The main value of the method is its simplicity and extensibility for future improvements in fusion strategy or stronger encoders.",
+  "references_stub": [
+    "[Citation] paper_1774459454_ae352c82"
+  ],
+  "figure_plan": [
+    {
+      "figure_id": "fig1",
+      "figure_type": "pipeline",
+      "title": "Dual-Branch Retrieval Pipeline",
+      "description": "Diagram of the page-image branch, OCR-text branch, and late-fusion scoring stage.",
+      "source_refs": [
+        "paper_1774459454_ae352c82"
+      ],
+      "placeholder_notes": [
+        "Use mock-only schematic.",
+        "Label image-only, OCR-only, and fused ranking paths."
+      ]
+    },
+    {
+      "figure_id": "fig2",
+      "figure_type": "bar_chart",
+      "title": "Stage3 Validation Metrics",
+      "description": "Bar chart comparing recall@1, latency, and loss for the reported run versus the planned reference.",
+      "source_refs": [
+        "paper_1774459454_ae352c82"
+      ],
+      "placeholder_notes": [
+        "Use the provided values 0.88, 37 ms, and 0.12.",
+        "Show equal performance against the plan."
+      ]
+    }
+  ],
+  "paper_template_ref": "D:\\3\\MRAG\\workspace\\templates\\stage3_validation_paper.md",
+  "idea_refs": [
+    "idea_1774459704_d3869629"
+  ],
+  "experiment_result_refs": [
+    "run_1774460637_13fca6dd"
+  ],
+  "comparison_refs": [],
+  "citation_refs": [
+    "paper_1774459454_ae352c82"
+  ],
+  "result_archive_id": "archive_1774460673_b7f25eee",
+  "draft_path": "D:\\3\\MRAG\\workspace\\writing\\draft_1774461044_e460d625\\draft.json",
+  "draft_markdown_path": "D:\\3\\MRAG\\workspace\\writing\\draft_1774461044_e460d625\\draft.md",
+  "figure_plan_path": "D:\\3\\MRAG\\workspace\\writing\\draft_1774461044_e460d625\\figure_plan.json",
+  "generated_at": "2026-03-26T01:50:44.9291725+08:00"
+}

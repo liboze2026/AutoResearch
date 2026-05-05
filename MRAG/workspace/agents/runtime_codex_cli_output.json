@@ -1,0 +1,85 @@
+{
+  "status": "succeeded",
+  "normalized_payload": {
+    "job_id": "demo-codex-fallback-001",
+    "agent_type": "reader",
+    "execution_mode_requested": "codex_cli",
+    "execution_mode_used": "mock",
+    "model_provider": "codex",
+    "model_name": "contract-test",
+    "prompt_version": "v1",
+    "output_schema_ref": "schemas/reader-output-v1.json",
+    "workspace_dir": "D:/3/MRAG/workspace/agents/jobs/demo-codex-fallback-001",
+    "executor": "CodexCLIExecutor",
+    "response_text": "stable mock response for agent=reader, job=demo-codex-fallback-001, schema=schemas/reader-output-v1.json",
+    "response_json": {
+      "result": "stable_mock_response",
+      "job_id": "demo-codex-fallback-001",
+      "agent_type": "reader",
+      "input_ref_count": 0,
+      "tool_ref_count": 1,
+      "skill_ref_count": 1,
+      "memory_ref_count": 1
+    },
+    "codex_cli_command": "definitely-missing-codex-cli",
+    "codex_cli_args": [],
+    "codex_cli_available": false,
+    "fallback_reason": "codex_cli_not_found"
+  },
+  "artifact_manifest": [
+    {
+      "artifact_type": "codex_prompt",
+      "name": "prompt.txt",
+      "file_path": "D:\\3\\MRAG\\workspace\\agents\\jobs\\demo-codex-fallback-001\\codex_cli\\prompt.txt",
+      "metadata": {
+        "role": "codex_cli_prompt"
+      }
+    },
+    {
+      "artifact_type": "input_contract",
+      "name": "runtime_codex_cli_input.json",
+      "file_path": "D:\\3\\MRAG\\workspace\\agents\\runtime_codex_cli_input.json",
+      "metadata": {
+        "role": "runtime_input"
+      }
+    },
+    {
+      "artifact_type": "output_contract",
+      "name": "runtime_codex_cli_output.json",
+      "file_path": "D:\\3\\MRAG\\workspace\\agents\\runtime_codex_cli_output.json",
+      "metadata": {
+        "role": "runtime_output"
+      }
+    }
+  ],
+  "repair_actions": [],
+  "tool_usages": [
+    {
+      "tool_ref": "codex_cli",
+      "status": "fallback",
+      "summary": "codex_cli_not_found",
+      "metadata": {
+        "command": "definitely-missing-codex-cli",
+        "args": [],
+        "config_sources": [
+          ".env / environment variables (CODEX_CLI_*)",
+          "runtime config file (AGENT_RUNTIME_CONFIG_FILE or backend/python_agents/runtime/config.local.json)",
+          "database config table hook (reserved extension point)"
+        ]
+      }
+    },
+    {
+      "tool_ref": "mock_executor",
+      "status": "succeeded",
+      "summary": "Returned stable mock output.",
+      "metadata": {
+        "executor": "MockExecutor"
+      }
+    }
+  ],
+  "warnings": [
+    "mock executor used; response is synthetic but stable.",
+    "Codex CLI command 'definitely-missing-codex-cli' was not found. Falling back to mock executor."
+  ],
+  "error_message": ""
+}

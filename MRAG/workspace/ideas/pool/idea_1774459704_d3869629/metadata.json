@@ -1,0 +1,87 @@
+{
+  "ideaId": "idea_1774459704_d3869629",
+  "title": "Late-Fusion OCR + Vision Retriever for VisDoM",
+  "descriptionMd": "A minimal multimodal RAG baseline for VisDoM that indexes each document page with two signals: a lightweight visual embedding from the page image and an OCR-text embedding from extracted text, then retrieves by late-fusing the scores. The experiment is intentionally small and stage3-friendly: compare image-only, OCR-only, and fused retrieval on the existing VisDoM split to test whether adding cheap text signals improves document retrieval without a heavy cross-encoder.",
+  "status": "draft",
+  "weight": 77,
+  "priority": 0,
+  "confidence": 0.77,
+  "sourceType": "auto",
+  "generatedFrom": "idea_generator_agent",
+  "sourceSnapshot": [
+    {
+      "id": 0,
+      "ideaId": "idea_1774459704_d3869629",
+      "paperId": "paper_1774459454_ae352c82",
+      "paperInsightId": "pinsight_1774459571_1afeeb00",
+      "sourceNote": "idea generator paper insight source",
+      "paperTitle": "VisDoM: A Benchmark for Visual Document Retrieval",
+      "createdAt": "2026-03-26T01:28:24.7345543+08:00",
+      "updatedAt": "2026-03-26T01:28:24.7345543+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774459704_d3869629",
+      "sourceNote": "dataset_asset:dasset_1774459658_85800333",
+      "createdAt": "2026-03-26T01:28:24.7345543+08:00",
+      "updatedAt": "2026-03-26T01:28:24.7345543+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774459704_d3869629",
+      "sourceNote": "dataset_eval_protocol:D:\\3\\MRAG\\workspace\\datasets\\dasset_1774459658_85800333\\evalplan.json",
+      "createdAt": "2026-03-26T01:28:24.7345543+08:00",
+      "updatedAt": "2026-03-26T01:28:24.7345543+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774459704_d3869629",
+      "sourceNote": "human_hint: Focus on a minimal controlled multimodal RAG experiment grounded on the VisDoM benchmark.",
+      "createdAt": "2026-03-26T01:28:24.7345543+08:00",
+      "updatedAt": "2026-03-26T01:28:24.7345543+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774459704_d3869629",
+      "sourceNote": "human_hint: Prefer a small baseline-friendly idea that can run on a single idle GPU on shenzhenvlab.",
+      "createdAt": "2026-03-26T01:28:24.7345543+08:00",
+      "updatedAt": "2026-03-26T01:28:24.7345543+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774459704_d3869629",
+      "sourceNote": "human_hint: Keep the experiment lightweight and suitable for stage3 validation rather than SOTA performance.",
+      "createdAt": "2026-03-26T01:28:24.7345543+08:00",
+      "updatedAt": "2026-03-26T01:28:24.7345543+08:00"
+    }
+  ],
+  "structuredIdea": {
+    "title": "Late-Fusion OCR + Vision Retriever for VisDoM",
+    "description_md": "A minimal multimodal RAG baseline for VisDoM that indexes each document page with two signals: a lightweight visual embedding from the page image and an OCR-text embedding from extracted text, then retrieves by late-fusing the scores. The experiment is intentionally small and stage3-friendly: compare image-only, OCR-only, and fused retrieval on the existing VisDoM split to test whether adding cheap text signals improves document retrieval without a heavy cross-encoder.",
+    "research_direction": "Build a baseline-friendly multimodal retrieval pipeline for visual document search using dual encoders and late fusion, then validate whether OCR complements page appearance on VisDoM.",
+    "target_dataset_refs": [
+      "dasset_1774459658_85800333"
+    ],
+    "dataset_eval_protocol_refs": [
+      "D:\\3\\MRAG\\workspace\\datasets\\dasset_1774459658_85800333\\evalplan.json"
+    ],
+    "innovation_type": "simple_multimodal_baseline",
+    "expected_advantage": "Low compute, easy to implement on a single GPU, and likely stronger than pure visual retrieval when queries depend on document text cues.",
+    "risk_points": [
+      "OCR quality may dominate results and obscure the visual contribution.",
+      "Late fusion may yield only modest gains if VisDoM queries are mostly appearance-based.",
+      "Single-stage retrieval may underperform more complex rerankers on harder cases."
+    ],
+    "priority": 0,
+    "confidence": 0.77,
+    "paper_insight_refs": [
+      "pinsight_1774459571_1afeeb00"
+    ],
+    "human_hints": [
+      "Focus on a minimal controlled multimodal RAG experiment grounded on the VisDoM benchmark.",
+      "Prefer a small baseline-friendly idea that can run on a single idle GPU on shenzhenvlab.",
+      "Keep the experiment lightweight and suitable for stage3 validation rather than SOTA performance."
+    ]
+  },
+  "updatedAt": "2026-03-26T01:28:24.7345543+08:00"
+}

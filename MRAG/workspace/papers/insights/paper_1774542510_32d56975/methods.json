@@ -1,0 +1,5 @@
+[
+  "Use parsed markdown as the stable intermediate representation.",
+  "Use schema-first validation and repair before persisting insights.",
+  "Prefer deterministic workspace artifacts to preserve auditability."
+]

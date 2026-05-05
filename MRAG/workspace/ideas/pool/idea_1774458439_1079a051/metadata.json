@@ -1,0 +1,73 @@
+{
+  "ideaId": "idea_1774458439_1079a051",
+  "title": "VisDoM Page-Region Hard Negative Retriever",
+  "descriptionMd": "Train a lightweight retrieval adapter that reranks candidate pages/regions using OCR text plus coarse visual layout features, with hard negatives mined from visually similar but semantically different pages. The scope is limited to improving top-k visual document retrieval for multimodal RAG without changing the generator.",
+  "status": "draft",
+  "weight": 66,
+  "priority": 0,
+  "confidence": 0.66,
+  "sourceType": "auto",
+  "generatedFrom": "idea_generator_agent",
+  "sourceSnapshot": [
+    {
+      "id": 0,
+      "ideaId": "idea_1774458439_1079a051",
+      "paperId": "paper_1774458202_0d1285d3",
+      "paperInsightId": "pinsight_1774458321_141d5fa5",
+      "sourceNote": "idea generator insight event source",
+      "createdAt": "2026-03-26T01:07:19.4432935+08:00",
+      "updatedAt": "2026-03-26T01:07:19.4432935+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774458439_1079a051",
+      "sourceNote": "dataset_asset:VisDoM",
+      "createdAt": "2026-03-26T01:07:19.4432935+08:00",
+      "updatedAt": "2026-03-26T01:07:19.4432935+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774458439_1079a051",
+      "sourceNote": "dataset_eval_protocol:Recall@1/5/10 for query-to-page retrieval",
+      "createdAt": "2026-03-26T01:07:19.4432935+08:00",
+      "updatedAt": "2026-03-26T01:07:19.4432935+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774458439_1079a051",
+      "sourceNote": "dataset_eval_protocol:MRR for ranked retrieval quality",
+      "createdAt": "2026-03-26T01:07:19.4432935+08:00",
+      "updatedAt": "2026-03-26T01:07:19.4432935+08:00"
+    },
+    {
+      "id": 0,
+      "ideaId": "idea_1774458439_1079a051",
+      "sourceNote": "dataset_eval_protocol:End-to-end answer accuracy with top-k retrieved pages as context",
+      "createdAt": "2026-03-26T01:07:19.4432935+08:00",
+      "updatedAt": "2026-03-26T01:07:19.4432935+08:00"
+    }
+  ],
+  "structuredIdea": {
+    "title": "VisDoM Page-Region Hard Negative Retriever",
+    "description_md": "Train a lightweight retrieval adapter that reranks candidate pages/regions using OCR text plus coarse visual layout features, with hard negatives mined from visually similar but semantically different pages. The scope is limited to improving top-k visual document retrieval for multimodal RAG without changing the generator.",
+    "research_direction": "Use the VisDoM benchmark as the primary testbed and add a small reranking module over baseline text/vision embeddings. Compare plain embedding retrieval vs. layout-aware reranking with mined hard negatives.",
+    "target_dataset_refs": [
+      "VisDoM"
+    ],
+    "dataset_eval_protocol_refs": [
+      "Recall@1/5/10 for query-to-page retrieval",
+      "MRR for ranked retrieval quality",
+      "End-to-end answer accuracy with top-k retrieved pages as context"
+    ],
+    "innovation_type": "low-scope retrieval reranking",
+    "expected_advantage": "Should reduce confusions between visually similar pages and improve top-k retrieval quality with minimal model and engineering overhead.",
+    "risk_points": [
+      "May overfit to VisDoM layout patterns",
+      "Hard-negative mining may be noisy if OCR is weak",
+      "Gains may be small if the baseline retriever is already strong"
+    ],
+    "priority": 0,
+    "confidence": 0.66
+  },
+  "updatedAt": "2026-03-26T01:07:19.4432935+08:00"
+}

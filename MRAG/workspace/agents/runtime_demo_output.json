@@ -1,0 +1,42 @@
+{
+  "status": "succeeded",
+  "normalized_payload": {
+    "job_id": "demo-job-001",
+    "agent_type": "reader",
+    "execution_mode": "mock",
+    "model_provider": "codex",
+    "model_name": "contract-test",
+    "prompt_version": "v1",
+    "output_schema_ref": "schemas/reader-output-v1.json",
+    "input_ref_count": 1,
+    "skill_ref_count": 1,
+    "tool_ref_count": 1,
+    "memory_ref_count": 1,
+    "workspace_dir": "D:/3/MRAG/workspace/agents/jobs/demo-job-001",
+    "runtime_note": "contract-only runtime completed"
+  },
+  "artifact_manifest": [
+    {
+      "artifact_type": "input_contract",
+      "name": "runtime_demo_input.json",
+      "file_path": "D:\\3\\MRAG\\workspace\\agents\\runtime_demo_input.json",
+      "metadata": {
+        "role": "runtime_input"
+      }
+    },
+    {
+      "artifact_type": "output_contract",
+      "name": "runtime_demo_output.json",
+      "file_path": "D:\\3\\MRAG\\workspace\\agents\\runtime_demo_output.json",
+      "metadata": {
+        "role": "runtime_output"
+      }
+    }
+  ],
+  "repair_actions": [],
+  "tool_usages": [],
+  "warnings": [
+    "runtime skeleton executed without concrete agent business logic"
+  ],
+  "error_message": ""
+}

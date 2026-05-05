@@ -1,0 +1,152 @@
+{
+  "reading_summary": "Fixture fallback summary for a VisDoM-style multimodal document retrieval dataset. The retained papers emphasize layout-aware vision-language encoders, strong dual-encoder baselines, late-interaction retrieval, and hard-negative training for page-level recall.",
+  "sources": [
+    {
+      "title": "LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking",
+      "abstract": "LayoutLMv3 unifies text and image masking for document understanding and serves as a strong layout-aware baseline for visually rich document tasks.",
+      "authors": ["Yupan Huang", "Tengchao Lv", "Minghao He"],
+      "venue": "ACM MM",
+      "publication_year": 2022,
+      "source_type": "fixture",
+      "source_url": "https://arxiv.org/abs/2204.08387",
+      "open_access_url": "https://arxiv.org/pdf/2204.08387.pdf",
+      "quality_tier": "top_venue",
+      "ranking_score": 92.0,
+      "quality_score": 9.2,
+      "relevance_score": 9.0,
+      "citation_count": 1200,
+      "metadata": {
+        "provider_refs": ["fixture"],
+        "external_ids": {
+          "arxiv": "2204.08387"
+        },
+        "doi": "",
+        "keywords": ["layout", "document ai", "vision-language", "pretraining"]
+      }
+    },
+    {
+      "title": "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT",
+      "abstract": "ColBERT is a strong late-interaction retrieval baseline that improves recall while preserving token-level matching signals.",
+      "authors": ["Omar Khattab", "Matei Zaharia"],
+      "venue": "SIGIR",
+      "publication_year": 2020,
+      "source_type": "fixture",
+      "source_url": "https://arxiv.org/abs/2004.12832",
+      "open_access_url": "https://arxiv.org/pdf/2004.12832.pdf",
+      "quality_tier": "top_venue",
+      "ranking_score": 89.0,
+      "quality_score": 9.0,
+      "relevance_score": 8.4,
+      "citation_count": 2100,
+      "metadata": {
+        "provider_refs": ["fixture"],
+        "external_ids": {
+          "arxiv": "2004.12832"
+        },
+        "doi": "",
+        "keywords": ["late interaction", "retrieval", "bert", "ranking"]
+      }
+    },
+    {
+      "title": "DocFormer: End-to-End Transformer for Document Understanding",
+      "abstract": "DocFormer combines visual, textual, and spatial cues for document representation and is relevant for page-level document retrieval pipelines.",
+      "authors": ["Sampad Banerjee", "Ayan Kumar Bhunia"],
+      "venue": "ICCV",
+      "publication_year": 2021,
+      "source_type": "fixture",
+      "source_url": "https://arxiv.org/abs/2106.11539",
+      "open_access_url": "https://arxiv.org/pdf/2106.11539.pdf",
+      "quality_tier": "top_venue",
+      "ranking_score": 87.0,
+      "quality_score": 8.9,
+      "relevance_score": 8.2,
+      "citation_count": 900,
+      "metadata": {
+        "provider_refs": ["fixture"],
+        "external_ids": {
+          "arxiv": "2106.11539"
+        },
+        "doi": "",
+        "keywords": ["document understanding", "layout", "multimodal"]
+      }
+    },
+    {
+      "title": "CLIP: Learning Transferable Visual Models From Natural Language Supervision",
+      "abstract": "CLIP provides a simple but strong dual-encoder baseline for image-text retrieval and often anchors multimodal retrieval comparisons.",
+      "authors": ["Alec Radford", "Jong Wook Kim"],
+      "venue": "ICML",
+      "publication_year": 2021,
+      "source_type": "fixture",
+      "source_url": "https://arxiv.org/abs/2103.00020",
+      "open_access_url": "https://arxiv.org/pdf/2103.00020.pdf",
+      "quality_tier": "top_venue",
+      "ranking_score": 85.0,
+      "quality_score": 8.8,
+      "relevance_score": 7.8,
+      "citation_count": 12000,
+      "metadata": {
+        "provider_refs": ["fixture"],
+        "external_ids": {
+          "arxiv": "2103.00020"
+        },
+        "doi": "",
+        "keywords": ["dual encoder", "contrastive learning", "image-text retrieval"]
+      }
+    }
+  ],
+  "reader_context": {
+    "task_definition": "Rank document pages so that the correct evidence page is retrieved early for a visually rich document query.",
+    "dataset_specific_challenges": [
+      "Page-level supervision can hide fine-grained evidence mismatch inside long visual documents.",
+      "OCR noise, dense layouts, and tables often weaken text-only retrieval baselines.",
+      "Hard negatives may be visually similar pages from the same document or collection."
+    ],
+    "relevant_methods_landscape": [
+      "Layout-aware document encoders such as LayoutLMv3 and DocFormer remain strong representation baselines.",
+      "Dual-encoder retrieval offers efficient first-stage recall, while late interaction improves difficult ranking cases.",
+      "Contrastive training with hard negatives is repeatedly used to raise retrieval recall without changing downstream generation."
+    ],
+    "likely_strong_baselines": [
+      "OCR-text BM25 or dense text retrieval over page transcriptions.",
+      "CLIP-like dual-encoder retrieval with page image and query text embeddings.",
+      "Layout-aware document encoder plus contrastive retrieval head.",
+      "Late-interaction reranking on top of a dual-encoder shortlist."
+    ],
+    "common_failure_points": [
+      "Retriever overweights repeated headers or boilerplate instead of evidence-bearing regions.",
+      "Visual-only cues dominate when OCR text is sparse or noisy.",
+      "Negative sampling is too easy, so recall collapses on near-duplicate pages."
+    ],
+    "evaluation_caveats": [
+      "Official recall metrics can look healthy even when the exact evidence region is not localized.",
+      "Train/validation/test splits should be checked for document overlap and template leakage.",
+      "Page-level metrics should be interpreted before any snippet-level extension."
+    ],
+    "implementation_constraints": [
+      "Need reusable page adapter and image-text batching that fits GPU memory.",
+      "Must preserve stable page ids and split definitions for reproducible recall evaluation.",
+      "Image resolution and OCR preprocessing choices can materially change retrieval quality."
+    ],
+    "promising_research_directions": [
+      "Layout-aware hard-negative mining for visually similar but semantically wrong pages.",
+      "Two-stage retrieval with efficient page recall followed by region-sensitive reranking.",
+      "Query-conditioned page chunking or evidence-aware page representations."
+    ],
+    "citation_metadata": [
+      {
+        "title": "LayoutLMv3: Pre-training for Document AI with Unified Text and Image Masking",
+        "venue": "ACM MM",
+        "year": 2022,
+        "source_url": "https://arxiv.org/abs/2204.08387",
+        "quality_tier": "top_venue"
+      },
+      {
+        "title": "ColBERT: Efficient and Effective Passage Search via Contextualized Late Interaction over BERT",
+        "venue": "SIGIR",
+        "year": 2020,
+        "source_url": "https://arxiv.org/abs/2004.12832",
+        "quality_tier": "top_venue"
+      }
+    ]
+  }
+}

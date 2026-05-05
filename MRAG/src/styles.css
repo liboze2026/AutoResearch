@@ -1,0 +1,66 @@
+﻿:root {
+  --bg: #f3f6fb;
+  --panel: #ffffff;
+  --panel-alt: #f8fafd;
+  --text: #1f2d3d;
+  --subtext: #5b6b7a;
+  --border: #dbe3ee;
+  --primary: #2f5bea;
+  --success: #2f9e44;
+  --warn: #d17a00;
+  --danger: #c92a2a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top right, #e8f0ff 0%, var(--bg) 45%, #eef3fa 100%);
+}
+
+.page-title {
+  font-size: 22px;
+  margin: 0;
+}
+
+.page-subtitle {
+  margin-top: 6px;
+  color: var(--subtext);
+}
+
+.page-header {
+  margin-bottom: 16px;
+}
+
+.section-space {
+  margin-top: 16px;
+}
+
+.card-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.grid-4 {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.el-card {
+  border-color: var(--border);
+}

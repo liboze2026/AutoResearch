@@ -1,0 +1,9 @@
+{
+  "datasetAssetId": "dasset_1774356289_0261b2bd",
+  "name": "Manual Stage1 Dataset Asset",
+  "taskType": "text",
+  "status": "active",
+  "sourceType": "manual",
+  "localOrRemotePath": "/app/workspace/datasets/manual_stage1_asset",
+  "updatedAt": "2026-03-24T12:44:49.347079049Z"
+}

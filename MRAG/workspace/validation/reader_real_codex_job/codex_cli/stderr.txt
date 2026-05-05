@@ -1,0 +1,50 @@
+2026-03-25T16:53:33.817549Z ERROR codex_core::models_manager::manager: failed to refresh available models: timeout waiting for child process to exit
+2026-03-25T16:53:34.111915Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell
+Reading prompt from stdin...
+OpenAI Codex v0.117.0-alpha.10 (research preview)
+--------
+workdir: D:\3\MRAG
+model: gpt-5.4-mini
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR, C:\Users\Zionjuer\.codex\memories] (network access enabled)
+reasoning effort: low
+reasoning summaries: none
+session id: 019d25ea-6dfa-7570-9450-0d19afbc112a
+--------
+user
+You are MRAG Reader Agent running in controlled mode.
+Do not inspect the workspace. Do not run shell commands. Do not browse.
+Return valid JSON only.
+The JSON must contain 'candidate_papers' as an array.
+Each candidate paper must include: title, abstract, source, year, url, file_status.
+Always include file_path as a string; use an empty string when unknown.
+Prefer the shortest valid answer that satisfies the schema and current task.
+Do not add markdown fences.
+
+job_id: reader_real_codex_visdom_001
+research_direction: multimodal RAG with VisDoM dataset
+keywords: ["multimodal rag", "visdom", "vision-language retrieval"]
+source_scope: mixed
+time_range: {"end_year": 2026}
+max_papers: 1
+manual_paper_count: 0
+
+mcp startup: no servers
+2026-03-25T16:53:45.498527Z ERROR codex_api::endpoint::responses_websocket: failed to connect to websocket: IO error: 不知道这样的主机。 (os error 11001), url: wss://chatgpt.com/backend-api/codex/responses
+2026-03-25T16:53:45.504293Z  WARN codex_core::session_startup_prewarm: startup websocket prewarm setup failed: stream disconnected before completion: 不知道这样的主机。 (os error 11001)
+2026-03-25T16:54:00.532624Z  WARN codex_core::codex: stream disconnected - retrying sampling request (1/5 in 214ms)...
+2026-03-25T16:54:15.779097Z  WARN codex_core::codex: stream disconnected - retrying sampling request (2/5 in 383ms)...
+Reconnecting... 2/5 (timeout waiting for child process to exit)
+2026-03-25T16:54:31.182070Z  WARN codex_core::codex: stream disconnected - retrying sampling request (3/5 in 800ms)...
+Reconnecting... 3/5 (timeout waiting for child process to exit)
+2026-03-25T16:54:46.993772Z  WARN codex_core::codex: stream disconnected - retrying sampling request (4/5 in 1.573s)...
+Reconnecting... 4/5 (timeout waiting for child process to exit)
+2026-03-25T16:55:03.578270Z  WARN codex_core::codex: stream disconnected - retrying sampling request (5/5 in 3.207s)...
+Reconnecting... 5/5 (timeout waiting for child process to exit)
+2026-03-25T16:55:21.830566Z  WARN codex_core::client: falling back to HTTP
+warning: Falling back from WebSockets to HTTPS transport. timeout waiting for child process to exit
+codex
+{"candidate_papers": [{"title":"","abstract":"","source":"","year":0,"url":"","file_status":"","file_path":""}]}
+tokens used
+8,639

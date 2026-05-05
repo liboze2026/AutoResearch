@@ -1,0 +1,9 @@
+{
+  "datasetAssetId": "dasset_1774512864_34106198",
+  "name": "Stage3 validation retrieval mock dataset",
+  "taskType": "retrieval",
+  "status": "active",
+  "sourceType": "manual",
+  "localOrRemotePath": "D:\\4\\MRAG\\workspace\\datasets\\downloads\\ajob_1774512863_524f1efc\\mock_dataset",
+  "updatedAt": "2026-03-26T16:14:24.7095564+08:00"
+}

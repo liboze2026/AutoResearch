@@ -1,0 +1,24 @@
+{
+  "ideaId": "idea_1774355418_4bb324de",
+  "title": "Combine Stage1 Flow Demo Paper with a lightweight retrieval step",
+  "descriptionMd": "## Hypothesis\nAdd a simple retrieval or memory component before applying the paper method.\n\n## Insight source\nLeverage Frames Stage1 Flow Demo Paper as a manageable research asset. while keeping the implementation small for stage1 validation.",
+  "status": "draft",
+  "weight": 66,
+  "priority": 69,
+  "confidence": 0.61,
+  "sourceType": "auto",
+  "generatedFrom": "paper:paper_1774354462_23ffec2a",
+  "sourceSnapshot": [
+    {
+      "id": 0,
+      "ideaId": "idea_1774355418_4bb324de",
+      "paperId": "paper_1774354462_23ffec2a",
+      "paperInsightId": "pinsight_1774354463_a2f7c3be",
+      "sourceNote": "mock idea #3 generated from paper insight summary",
+      "paperTitle": "Stage1 Flow Demo Paper",
+      "createdAt": "2026-03-24T12:30:18.868771846Z",
+      "updatedAt": "2026-03-24T12:30:18.868771846Z"
+    }
+  ],
+  "updatedAt": "2026-03-24T12:30:18.868771846Z"
+}

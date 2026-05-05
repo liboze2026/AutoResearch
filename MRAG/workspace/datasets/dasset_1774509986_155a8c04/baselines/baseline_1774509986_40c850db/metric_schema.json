@@ -1,0 +1,9 @@
+{
+  "direction": "maximize",
+  "metric_list": [
+    "recall@10",
+    "mrr",
+    "ndcg@10"
+  ],
+  "primary_metric": "recall@10"
+}

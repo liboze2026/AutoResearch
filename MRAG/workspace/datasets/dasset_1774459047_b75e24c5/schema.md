@@ -1,0 +1,2 @@
+- Split strategy: provided_split
+- Metric list: Recall@1, Recall@5, MRR, nDCG@10

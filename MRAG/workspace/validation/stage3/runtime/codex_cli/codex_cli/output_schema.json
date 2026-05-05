@@ -1,0 +1,50 @@
+{
+  "type": "object",
+  "required": [
+    "candidate_papers"
+  ],
+  "properties": {
+    "candidate_papers": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "abstract",
+          "source",
+          "year",
+          "url",
+          "file_status",
+          "file_path"
+        ],
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "abstract": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "year": {
+            "type": "integer"
+          },
+          "url": {
+            "type": "string"
+          },
+          "file_status": {
+            "type": "string"
+          },
+          "file_path": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

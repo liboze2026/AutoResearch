@@ -1,0 +1,4 @@
+[
+  "Current insight generation can still rely on mock or fallback execution paths.",
+  "Novelty and contribution extraction remain shallow when no real model call is enabled."
+]

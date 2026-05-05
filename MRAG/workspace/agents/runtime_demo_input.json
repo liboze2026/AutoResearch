@@ -1,0 +1,17 @@
+﻿{
+  "job_id": "demo-job-001",
+  "agent_type": "reader",
+  "execution_mode": "mock",
+  "model_provider": "codex",
+  "model_name": "contract-test",
+  "prompt_version": "v1",
+  "input_refs": [
+    {"ref_type": "paper", "ref_id": "paper-demo-1", "ref_path": "workspace/papers/paper-demo-1"}
+  ],
+  "output_schema_ref": "schemas/reader-output-v1.json",
+  "skill_refs": ["skills/reader/base"],
+  "tool_refs": ["tools/fs.read"],
+  "memory_refs": ["memory/session/demo"],
+  "workspace_dir": "D:/3/MRAG/workspace/agents/jobs/demo-job-001",
+  "metadata": {"source": "manual-demo"}
+}

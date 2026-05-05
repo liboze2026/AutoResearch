@@ -1,0 +1,9 @@
+{
+  "type": "object",
+  "required": [
+    "protocol_version",
+    "method_name",
+    "runner_mode",
+    "dataset_adapter"
+  ]
+}

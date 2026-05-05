@@ -1,0 +1,96 @@
+{
+  "status": "succeeded",
+  "normalized_payload": {
+    "job_id": "stage3-runtime-mock",
+    "agent_type": "reader",
+    "execution_mode_requested": "mock",
+    "execution_mode_used": "mock",
+    "model_provider": "codex",
+    "model_name": "stage3-runtime-validation",
+    "prompt_version": "v1",
+    "output_schema_ref": "schemas/reader-output-v1.json",
+    "workspace_dir": "D:\\4\\MRAG\\workspace\\validation\\stage3\\runtime\\mock",
+    "executor": "ReaderMockExecutor",
+    "summary": "Reader mock produced 1 candidate paper(s).",
+    "items": [
+      {
+        "title": "stage3 validation retrieval: Retrieval Study 1",
+        "abstract": "Controlled Reader mock candidate for stage3 validation retrieval with keyword 'retrieval'. This placeholder preserves the stage3 contract and can be replaced by real retrieval later.",
+        "source": "arxiv",
+        "year": 2026,
+        "url": "https://arxiv.org/abs/2603.0101",
+        "file_status": "metadata_only"
+      }
+    ],
+    "candidate_papers": [
+      {
+        "title": "stage3 validation retrieval: Retrieval Study 1",
+        "abstract": "Controlled Reader mock candidate for stage3 validation retrieval with keyword 'retrieval'. This placeholder preserves the stage3 contract and can be replaced by real retrieval later.",
+        "source": "arxiv",
+        "year": 2026,
+        "url": "https://arxiv.org/abs/2603.0101",
+        "file_status": "metadata_only"
+      }
+    ],
+    "data": {
+      "reader_request": {
+        "research_direction": "stage3 validation retrieval",
+        "keywords": [
+          "retrieval",
+          "validation"
+        ],
+        "source_scope": "arxiv",
+        "time_range": {
+          "year": 2026
+        },
+        "max_papers": 1,
+        "manual_paper_count": 0
+      },
+      "candidate_count": 1,
+      "response_json": {
+        "candidate_papers": [
+          {
+            "title": "stage3 validation retrieval: Retrieval Study 1",
+            "abstract": "Controlled Reader mock candidate for stage3 validation retrieval with keyword 'retrieval'. This placeholder preserves the stage3 contract and can be replaced by real retrieval later.",
+            "source": "arxiv",
+            "year": 2026,
+            "url": "https://arxiv.org/abs/2603.0101",
+            "file_status": "metadata_only"
+          }
+        ],
+        "mode": "reader_mock"
+      }
+    },
+    "metadata": {
+      "synthetic": true,
+      "agent_role": "reader"
+    }
+  },
+  "artifact_manifest": [
+    {
+      "artifact_type": "input_contract",
+      "name": "input.json",
+      "file_path": "D:\\4\\MRAG\\workspace\\validation\\stage3\\runtime\\mock\\input.json",
+      "metadata": {
+        "role": "runtime_input"
+      }
+    },
+    {
+      "artifact_type": "output_contract",
+      "name": "output.json",
+      "file_path": "D:\\4\\MRAG\\workspace\\validation\\stage3\\runtime\\mock\\output.json",
+      "metadata": {
+        "role": "runtime_output"
+      }
+    }
+  ],
+  "repair_actions": [],
+  "tool_usages": [],
+  "warnings": [
+    "reader mock executor used; results are stable placeholders."
+  ],
+  "validation_status": "succeeded",
+  "repair_status": "not_needed",
+  "validation_errors": [],
+  "error_message": ""
+}

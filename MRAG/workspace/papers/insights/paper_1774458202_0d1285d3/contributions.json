@@ -1,0 +1,5 @@
+[
+  "Introduces VisDoM as a benchmark centered on visual document retrieval.",
+  "Targets multimodal RAG settings rather than text-only retrieval.",
+  "Frames document understanding around visual evidence in documents."
+]

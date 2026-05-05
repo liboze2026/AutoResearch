@@ -1,0 +1,21 @@
+{
+  "title": "Use available benchmark set to extend controlled research idea",
+  "description_md": "Stable mock output for idea_generator.",
+  "research_direction": "controlled research idea",
+  "target_dataset_refs": [
+    "dasset_1774447924_5b83b30d",
+    "dasset_1774447647_59d5775f"
+  ],
+  "dataset_eval_protocol_refs": [
+    "D:\\3\\MRAG\\workspace\\datasets\\dasset_1774447924_5b83b30d\\evalplan.json",
+    "D:\\3\\MRAG\\workspace\\datasets\\dasset_1774447647_59d5775f\\evalplan.json"
+  ],
+  "innovation_type": "insight_plus_dataset",
+  "expected_advantage": "Should improve relevance or controllability on available benchmark set with limited implementation overhead.",
+  "risk_points": [
+    "Insight-to-dataset mapping may be shallow without deeper literature review.",
+    "Dataset protocol may not fully cover the claimed innovation."
+  ],
+  "priority": 68,
+  "confidence": 0.71
+}

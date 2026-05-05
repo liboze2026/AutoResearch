@@ -1,0 +1,7 @@
+{
+  "higherIsBetter": true,
+  "primary": "accuracy",
+  "secondary": [
+    "latencyMs"
+  ]
+}

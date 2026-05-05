@@ -1,0 +1,28 @@
+[
+  {
+    "figure_id": "fig1",
+    "figure_type": "pipeline",
+    "title": "Dual-Branch Retrieval Pipeline",
+    "description": "Diagram of the page-image branch, OCR-text branch, and late-fusion scoring stage.",
+    "source_refs": [
+      "paper_1774459454_ae352c82"
+    ],
+    "placeholder_notes": [
+      "Use mock-only schematic.",
+      "Label image-only, OCR-only, and fused ranking paths."
+    ]
+  },
+  {
+    "figure_id": "fig2",
+    "figure_type": "bar_chart",
+    "title": "Stage3 Validation Metrics",
+    "description": "Bar chart comparing recall@1, latency, and loss for the reported run versus the planned reference.",
+    "source_refs": [
+      "paper_1774459454_ae352c82"
+    ],
+    "placeholder_notes": [
+      "Use the provided values 0.88, 37 ms, and 0.12.",
+      "Show equal performance against the plan."
+    ]
+  }
+]

@@ -1,0 +1,5 @@
+[
+  "Provides a parsed markdown artifact with the study title and source reference.",
+  "Records that the current stage-1 parsing pipeline generates deterministic metadata artifacts.",
+  "Documents parser behavior and the placeholder nature of extracted abstract and author fields."
+]

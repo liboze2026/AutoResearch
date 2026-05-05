@@ -1,0 +1,21 @@
+{
+  "ideaId": "idea_1774412297_adfa4ce6",
+  "title": "Stage2 Debug Idea 3",
+  "descriptionMd": "dbg",
+  "status": "draft",
+  "weight": 70,
+  "priority": 80,
+  "confidence": 0.7,
+  "sourceType": "human",
+  "generatedFrom": "manual",
+  "sourceSnapshot": [
+    {
+      "id": 0,
+      "ideaId": "idea_1774412297_adfa4ce6",
+      "sourceNote": "dbg",
+      "createdAt": "2026-03-25T04:18:17.990885951Z",
+      "updatedAt": "2026-03-25T04:18:17.990885951Z"
+    }
+  ],
+  "updatedAt": "2026-03-25T04:18:17.990885951Z"
+}

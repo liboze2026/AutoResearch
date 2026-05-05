@@ -1,0 +1,22 @@
+﻿{
+    "reader_job_id":  "ajob_1774577293_8f3bfbf0",
+    "paper_id":  "paper_1774577293_98410243",
+    "insight_job_id":  "ajob_1774577294_bd7692f0",
+    "insight_id":  "pinsight_1774577295_2c796c76",
+    "dataset_job_id":  "ajob_1774577295_31cf76cb",
+    "dataset_asset_id":  "dasset_1774577296_cbb6eea7",
+    "dataset_memory_id":  "mem_1774577296_da37b010",
+    "idea_job_id":  "ajob_1774577296_564f7a2d",
+    "idea_id":  "idea_1774577297_3e11b95b",
+    "planner_job_id":  "ajob_1774577297_e236379b",
+    "experiment_id":  "exp_1774577298_ab96c924",
+    "coding_job_id":  "ajob_1774577298_502c37e5",
+    "run_id":  "run_1774577299_e7a8cc7c",
+    "result_archive_id":  "archive_1774577299_df34e433",
+    "writer_job_id":  "ajob_1774577299_98fce141",
+    "draft_id":  "draft_1774577300_22b32886",
+    "tool_id":  "tool_1774577292_f09cff72",
+    "skill_id":  "skill_1774577293_ad505bfd",
+    "shenzhenvlab_probe":  "missing",
+    "shenzhenvlab_probe_message":  "shenzhenvlab record not found"
+}

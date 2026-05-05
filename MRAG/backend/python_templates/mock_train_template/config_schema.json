@@ -1,0 +1,17 @@
+{
+  "template_name": "mock_train_template",
+  "version": 1,
+  "required_fields": [
+    "dataset_ref",
+    "dataset_loader_ref",
+    "train_template_type",
+    "model_name",
+    "hyperparams",
+    "output_dir",
+    "expected_metrics",
+    "comparison_targets"
+  ],
+  "runner_entrypoint": "runner.py",
+  "train_entrypoint": "train.py",
+  "evaluate_entrypoint": "evaluate.py"
+}

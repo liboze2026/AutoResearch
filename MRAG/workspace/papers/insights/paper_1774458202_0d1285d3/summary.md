@@ -1,0 +1,1 @@
+The available parsed preview is mock metadata only, so novelty can only be inferred from the title: the paper appears to introduce VisDoM, a benchmark for visual document retrieval and multimodal RAG.

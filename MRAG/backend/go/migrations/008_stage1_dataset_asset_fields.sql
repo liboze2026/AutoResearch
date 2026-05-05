@@ -1,0 +1,4 @@
+ALTER TABLE dataset_assets ADD COLUMN IF NOT EXISTS local_or_remote_path TEXT NOT NULL DEFAULT '';
+ALTER TABLE dataset_assets ADD COLUMN IF NOT EXISTS readme_md TEXT NOT NULL DEFAULT '';
+ALTER TABLE dataset_assets ADD COLUMN IF NOT EXISTS loader_note_md TEXT NOT NULL DEFAULT '';
+ALTER TABLE dataset_assets ADD COLUMN IF NOT EXISTS schema_note_md TEXT NOT NULL DEFAULT '';

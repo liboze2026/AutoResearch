@@ -1,0 +1,3 @@
+- Use the existing MRAG dataset record `ds_1774344377_cd2781fb` as the canonical scan source.
+- Read files from `/home/bzli/lbz/data/VisDoM-main`.
+- Preserve the current source type `remote` instead of re-scanning here.

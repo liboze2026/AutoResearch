@@ -1,0 +1,30 @@
+{
+  "contributions_json": [
+    "Introduces VisDoM as a benchmark centered on visual document retrieval.",
+    "Targets multimodal RAG settings rather than text-only retrieval.",
+    "Frames document understanding around visual evidence in documents."
+  ],
+  "extract_error": "",
+  "extract_mode": "codex_cli",
+  "extract_status": "completed",
+  "focus": "novelty",
+  "limitations_json": [
+    "Parsed content is explicitly mock-based and lacks the real abstract or body.",
+    "Novelty assessment is incomplete without the actual paper text.",
+    "Any contribution or method details beyond the title are speculative."
+  ],
+  "methods_json": [
+    "Inference only from the title and parser metadata, not the paper body.",
+    "Likely benchmark-style evaluation of retrieval and generation over document images.",
+    "No concrete method details are available in the provided preview."
+  ],
+  "novelty_points": [
+    "The likely novelty is the combination of visual document retrieval with multimodal RAG benchmarking.",
+    "The benchmark focus suggests evaluation on visually grounded document evidence, not just OCR text.",
+    "It appears to formalize a task setting for retrieval over document layouts and images in multimodal pipelines."
+  ],
+  "paper_id": "paper_1774458202_0d1285d3",
+  "parsed_content_ref": "D:\\3\\MRAG\\workspace\\papers\\parsed\\paper_1774458202_0d1285d3\\parsed.md",
+  "source_ref": "insight_agent_runtime",
+  "summary_md": "The available parsed preview is mock metadata only, so novelty can only be inferred from the title: the paper appears to introduce VisDoM, a benchmark for visual document retrieval and multimodal RAG."
+}

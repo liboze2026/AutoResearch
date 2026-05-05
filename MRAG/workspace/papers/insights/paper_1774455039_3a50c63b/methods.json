@@ -1,0 +1,5 @@
+[
+  "Derives the title from the heading or source file name.",
+  "Populates abstract and author sections with mock placeholder text.",
+  "Stores the source path and a parser note inside a markdown artifact."
+]

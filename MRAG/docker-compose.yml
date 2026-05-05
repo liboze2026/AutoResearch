@@ -1,0 +1,60 @@
+﻿services:
+  postgres:
+    image: postgres:16
+    container_name: mrag-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: mrag_platform
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: root
+    ports:
+    - "15432:5432"
+
+    volumes:
+      - mrag_pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d mrag_platform"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  go-backend:
+    build:
+      context: ./backend/go
+    container_name: mrag-go-backend
+    restart: unless-stopped
+    environment:
+      APP_PORT: 8080
+      POSTGRES_DSN: postgres://postgres:root@postgres:5432/mrag_platform?sslmode=disable
+      PYTHON_EXEC: python3
+      PYTHON_AGENTS_DIR: /app/python_agents
+      PYTHON_TEMPLATES_DIR: /app/python_templates
+      WORKSPACE_ROOT: /app/workspace
+      HOME: /root
+      HOST_SSH_DIR: /host-ssh
+      SSH_BINARY: ssh
+      SSH_CLIENT_MODE: real
+      SSH_DIAL_TIMEOUT_SEC: 4
+      SSH_COMMAND_TIMEOUT_SEC: 20
+      REMOTE_EXECUTION_MODE: real
+      REMOTE_WORK_ROOT: /home/bzli/lbz
+      REMOTE_RUNNER_ENTRYPOINT: ./bin/mrag-remote-runner
+      REMOTE_DATASET_RUNNER_ENTRYPOINT: ./bin/mrag-dataset-runner
+      DATASET_SCAN_MODE: real
+      DATASET_INDEX_MODE: real
+      DATASET_PREVIEW_LIMIT: 12
+      OVERVIEW_STATS_MODE: real
+      OVERVIEW_TREND_DAYS: 7
+    volumes:
+      - "${USERPROFILE}/.ssh:/host-ssh:ro"
+      - "./backend/python_agents:/app/python_agents:ro"
+      - "./backend/python_templates:/app/python_templates:ro"
+      - "./workspace:/app/workspace"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "8080:8080"
+
+volumes:
+  mrag_pgdata:

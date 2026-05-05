@@ -1,0 +1,2 @@
+- Split strategy: use existing VisDoM benchmark split
+- Metric list: Recall@1, Recall@5, MRR, nDCG@10

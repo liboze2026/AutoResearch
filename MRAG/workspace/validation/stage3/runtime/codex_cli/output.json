@@ -1,0 +1,166 @@
+{
+  "status": "succeeded",
+  "normalized_payload": {
+    "job_id": "stage3-runtime-codex",
+    "agent_type": "reader",
+    "execution_mode_requested": "codex_cli",
+    "execution_mode_used": "mock",
+    "model_provider": "codex",
+    "model_name": "stage3-runtime-validation",
+    "prompt_version": "v1",
+    "output_schema_ref": "schemas/reader-output-v1.json",
+    "workspace_dir": "D:\\4\\MRAG\\workspace\\validation\\stage3\\runtime\\codex_cli",
+    "executor": "ReaderCodexCLIExecutor",
+    "summary": "Stable mock output for reader.",
+    "items": [
+      {
+        "title": "stage3 validation retrieval: Retrieval Study 1",
+        "abstract": "Controlled Reader mock candidate for stage3 validation retrieval with keyword 'retrieval'. This placeholder preserves the stage3 contract and can be replaced by real retrieval later.",
+        "source": "arxiv",
+        "year": 2026,
+        "url": "https://arxiv.org/abs/2603.0101",
+        "file_status": "metadata_only"
+      }
+    ],
+    "data": {
+      "result": "stable_mock_response",
+      "job_id": "stage3-runtime-codex",
+      "agent_type": "reader",
+      "input_ref_count": 0,
+      "tool_ref_count": 0,
+      "skill_ref_count": 0,
+      "memory_ref_count": 0,
+      "reader_request": {
+        "research_direction": "stage3 validation retrieval",
+        "keywords": [
+          "retrieval",
+          "validation"
+        ],
+        "source_scope": "arxiv",
+        "time_range": {
+          "year": 2026
+        },
+        "max_papers": 1,
+        "manual_paper_count": 0
+      },
+      "candidate_count": 1
+    },
+    "metadata": {
+      "synthetic": true,
+      "source": "mock_executor",
+      "fallback": true,
+      "config_sources": [
+        ".env / environment variables (CODEX_CLI_*)",
+        "runtime config file (AGENT_RUNTIME_CONFIG_FILE or backend/python_agents/runtime/config.local.json)",
+        "database config table hook (reserved extension point)"
+      ]
+    },
+    "response_text": "stable mock response for agent=reader, job=stage3-runtime-codex, schema=schemas/reader-output-v1.json",
+    "response_json": {
+      "result": "stable_mock_response",
+      "job_id": "stage3-runtime-codex",
+      "agent_type": "reader",
+      "input_ref_count": 0,
+      "tool_ref_count": 0,
+      "skill_ref_count": 0,
+      "memory_ref_count": 0
+    },
+    "codex_cli_command": "definitely-missing-codex-cli",
+    "codex_cli_args": [
+      "--output-schema",
+      "D:\\4\\MRAG\\workspace\\validation\\stage3\\runtime\\codex_cli\\codex_cli\\output_schema.json"
+    ],
+    "codex_cli_available": false,
+    "fallback_reason": "codex_cli_not_found",
+    "candidate_papers": [
+      {
+        "title": "stage3 validation retrieval: Retrieval Study 1",
+        "abstract": "Controlled Reader mock candidate for stage3 validation retrieval with keyword 'retrieval'. This placeholder preserves the stage3 contract and can be replaced by real retrieval later.",
+        "source": "arxiv",
+        "year": 2026,
+        "url": "https://arxiv.org/abs/2603.0101",
+        "file_status": "metadata_only"
+      }
+    ]
+  },
+  "artifact_manifest": [
+    {
+      "artifact_type": "codex_prompt",
+      "name": "prompt.txt",
+      "file_path": "D:\\4\\MRAG\\workspace\\validation\\stage3\\runtime\\codex_cli\\codex_cli\\prompt.txt",
+      "metadata": {
+        "role": "codex_cli_prompt"
+      }
+    },
+    {
+      "artifact_type": "input_contract",
+      "name": "input.json",
+      "file_path": "D:\\4\\MRAG\\workspace\\validation\\stage3\\runtime\\codex_cli\\input.json",
+      "metadata": {
+        "role": "runtime_input"
+      }
+    },
+    {
+      "artifact_type": "output_contract",
+      "name": "output.json",
+      "file_path": "D:\\4\\MRAG\\workspace\\validation\\stage3\\runtime\\codex_cli\\output.json",
+      "metadata": {
+        "role": "runtime_output"
+      }
+    }
+  ],
+  "repair_actions": [
+    {
+      "action": "fill_default",
+      "status": "applied",
+      "detail": "Filled default value for 'candidate_papers'.",
+      "metadata": {
+        "field": "candidate_papers",
+        "after": "[]"
+      }
+    },
+    {
+      "action": "repair_candidate_papers",
+      "status": "applied",
+      "detail": "Normalized Reader candidate_papers payload.",
+      "metadata": {
+        "candidate_count": 1
+      }
+    }
+  ],
+  "tool_usages": [
+    {
+      "tool_ref": "codex_cli",
+      "status": "fallback",
+      "summary": "codex_cli_not_found",
+      "metadata": {
+        "command": "definitely-missing-codex-cli",
+        "args": [
+          "--output-schema",
+          "D:\\4\\MRAG\\workspace\\validation\\stage3\\runtime\\codex_cli\\codex_cli\\output_schema.json"
+        ],
+        "config_sources": [
+          ".env / environment variables (CODEX_CLI_*)",
+          "runtime config file (AGENT_RUNTIME_CONFIG_FILE or backend/python_agents/runtime/config.local.json)",
+          "database config table hook (reserved extension point)"
+        ]
+      }
+    },
+    {
+      "tool_ref": "mock_executor",
+      "status": "succeeded",
+      "summary": "Returned stable mock output.",
+      "metadata": {
+        "executor": "MockExecutor"
+      }
+    }
+  ],
+  "warnings": [
+    "mock executor used; response is synthetic but stable.",
+    "Codex CLI command 'definitely-missing-codex-cli' was not found. Falling back to mock executor."
+  ],
+  "validation_status": "succeeded",
+  "repair_status": "succeeded",
+  "validation_errors": [],
+  "error_message": ""
+}

@@ -1,0 +1,2 @@
+- Reuse MRAG scanned dataset ref `visdom`.
+- Read from the registered existing location without re-downloading.

@@ -1,0 +1,29 @@
+[
+  {
+    "figure_id": "fig_1",
+    "figure_type": "workflow_mock",
+    "title": "Controlled Stage3 Pipeline Overview",
+    "description": "Mock flowchart showing idea -\u003e plan -\u003e coding/evaluation -\u003e writer.",
+    "source_refs": [
+      "run_1774452161_b8407a2f",
+      "exp_1774452160_09d78251"
+    ],
+    "placeholder_notes": [
+      "Picture agent is mock in v1.",
+      "Replace with a rendered pipeline diagram in a later stage."
+    ]
+  },
+  {
+    "figure_id": "fig_2",
+    "figure_type": "comparison_mock",
+    "title": "Baseline vs Controlled Run Comparison",
+    "description": "Mock comparison chart placeholder summarizing primary metrics against baseline references.",
+    "source_refs": [
+      "exp_1774452160_09d78251"
+    ],
+    "placeholder_notes": [
+      "Use bar chart or table rendering later.",
+      "Current output is a controlled description only."
+    ]
+  }
+]

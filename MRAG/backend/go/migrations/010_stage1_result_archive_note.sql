@@ -1,0 +1,1 @@
+ALTER TABLE result_archives ADD COLUMN IF NOT EXISTS note_md TEXT NOT NULL DEFAULT '';

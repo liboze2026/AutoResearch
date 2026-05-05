@@ -1,0 +1,6 @@
+﻿{
+  "dataset_name": "VisDoM-like Fixture",
+  "dataset_family": "visdom",
+  "retrieval_granularity": "page",
+  "description": "Small fixture that mimics a visual document retrieval dataset layout for page-level retrieval smoke tests."
+}
