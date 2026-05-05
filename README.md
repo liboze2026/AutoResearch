@@ -2,134 +2,134 @@
 
 # 🔬 AutoResearch · MRAG
 
-**A Controlled Multi-Agent Platform for AI-Assisted Scientific Research**
+**面向科研场景的「受控多智能体平台」**
 
-*Go control plane · Python agent runtime · Vue management console*
+*Go 控制面 · Python 智能体运行时 · Vue 管理控制台*
 
-[![Stage](https://img.shields.io/badge/stage-3%20delivered%20·%204%20in%20progress-blue)]()
-[![Backend](https://img.shields.io/badge/backend-Go-00ADD8?logo=go)]()
-[![Runtime](https://img.shields.io/badge/runtime-Python-3776AB?logo=python)]()
-[![Frontend](https://img.shields.io/badge/frontend-Vue%203-4FC08D?logo=vuedotjs)]()
-[![License](https://img.shields.io/badge/status-research%20preview-orange)]()
+[![阶段](https://img.shields.io/badge/阶段-3已交付%20·%204进行中-blue)]()
+[![后端](https://img.shields.io/badge/后端-Go-00ADD8?logo=go)]()
+[![运行时](https://img.shields.io/badge/运行时-Python-3776AB?logo=python)]()
+[![前端](https://img.shields.io/badge/前端-Vue%203-4FC08D?logo=vuedotjs)]()
+[![状态](https://img.shields.io/badge/状态-研究预览版-orange)]()
 
 </div>
 
 ---
 
-## ✨ What is this?
+## ✨ 项目简介
 
-**AutoResearch (codename `MRAG`)** is **not** a black-box "fully autonomous scientist". It is a **controlled agent platform** built on top of a real research-asset management and experiment-automation infrastructure — designed so that every step a model takes is **observable, replayable, validated, and persisted**.
+**AutoResearch（代号 `MRAG`）** 不是一个"完全自治"的黑盒科学家系统，而是一个建立在真实科研资产管理与实验自动化基础设施之上的**受控智能体平台**——核心目标是让模型走出的每一步都**可观察、可重放、可校验、可持久化**。
 
-Where "agent" usually means *"an LLM that does whatever it wants"*, here every agent runs through a unified **contract → executor → schema-validate → repair → persist** pipeline. That's the whole point.
+业内常说的"agent"往往等同于"让 LLM 自由发挥"，本项目反其道而行：所有智能体都必须经过统一的 **contract → executor → schema 校验 → 自动修复 → 持久化** 链路。这正是项目的立项初衷。
 
-> 🎯 **Goal:** make AI-driven research *reproducible*, not just *impressive*.
+> 🎯 **目标：让 AI 驱动的科研真正具备"可复现性"，而非仅仅"看起来很厉害"。**
 
 ---
 
-## 🧠 The 7 Controlled Agents
+## 🧠 七位受控智能体
 
-A complete `paper → publication` minimum loop, end-to-end:
+完整覆盖 `论文 → 论文产出` 最小闭环：
 
-| # | Agent | Role |
+| # | 智能体 | 职责 |
 |---|---|---|
-| 1 | 📖 **Reader** | Ingest papers, extract structured knowledge |
-| 2 | 💡 **Insight** | Distill insights, gaps, open problems |
-| 3 | 📊 **Dataset** | Survey / scan / index dataset assets |
-| 4 | 🌟 **Idea Generator** | Propose research ideas grounded in insights + datasets |
-| 5 | 🗺️ **Planner** | Turn ideas into executable experiment plans |
-| 6 | 💻 **Coding + Evaluator** | Run the experiment, evaluate baselines |
-| 7 | ✍️ **Writer + Picture** | Draft the writeup with figures |
+| 1 | 📖 **Reader（论文阅读）** | 摄取论文，抽取结构化知识 |
+| 2 | 💡 **Insight（洞察提炼）** | 提炼洞见、研究空白、开放问题 |
+| 3 | 📊 **Dataset（数据集）** | 数据集资产的扫描、索引、综述 |
+| 4 | 🌟 **Idea Generator（点子生成）** | 基于洞见与数据集生成研究 idea |
+| 5 | 🗺️ **Planner（实验规划）** | 把 idea 转化为可执行实验方案 |
+| 6 | 💻 **Coding + Evaluator（编码与评测）** | 跑实验、跑 baseline、做评测 |
+| 7 | ✍️ **Writer + Picture（写作与配图）** | 起草论文文本与配图 |
 
-Each agent shares the **same configuration surface**:
-`execution_mode · model_provider · model_name · prompt_version · skill_refs · tool_refs`.
+每个智能体共享同一套配置接口：
+`execution_mode · model_provider · model_name · prompt_version · skill_refs · tool_refs`
 
 ---
 
-## 🏗️ Architecture at a Glance
+## 🏗️ 整体架构
 
 ```
                 ┌────────────────────────────────────────────┐
-                │            Vue 3 Management Console        │
+                │         Vue 3 管理控制台                     │
                 │  /agents · /jobs · /catalog · /events       │
                 └──────────────────┬─────────────────────────┘
                                    │ REST
                 ┌──────────────────▼─────────────────────────┐
-                │         Go Control Plane (Gin)              │
+                │         Go 控制面（Gin）                     │
                 │  agentruntime · agenttrigger · agentpipeline│
-                │  experiment lifecycle · scheduler · archive │
-                │  SSH gateway · GPU probe · dataset scan     │
+                │  实验生命周期 · 调度器 · 结果归档              │
+                │  SSH 网关 · GPU 探测 · 数据集扫描              │
                 └──────────────────┬─────────────────────────┘
                                    │ contract IPC
                 ┌──────────────────▼─────────────────────────┐
-                │         Python Agent Runtime                │
+                │         Python 智能体运行时                   │
                 │  contract · executor · validator · repair   │
                 │  Reader · Insight · Dataset · Idea ·        │
                 │  Planner · Coding · Writer                  │
                 └──────────────────┬─────────────────────────┘
                                    │
                 ┌──────────────────▼─────────────────────────┐
-                │  PostgreSQL · Workspace Filesystem · GPU/SSH │
+                │  PostgreSQL · Workspace 文件系统 · GPU/SSH   │
                 └────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🚀 Highlights
+## 🚀 核心亮点
 
-- 🧩 **Unified contract layer** — every agent input / output passes a schema validator + auto-repair before persistence.
-- 🔁 **Replayable pipelines** — `paper → insight → dataset → idea → plan → coding/eval → writer` runs end-to-end and is fully traceable.
-- 🧪 **Real experiment infrastructure** — reuses Stage 2's `Experiment / ExperimentSpec / ExperimentRun / ResultArchive / ResultComparison`.
-- 🛠️ **Persistent registries** — tool registry, skill registry, memory store, artifact / event / job / schema stores.
-- 🧷 **Three execution modes**:
-  - `api` — real model API hook (off by default; controlled extension point)
-  - `codex_cli` — Codex CLI for minimum integration testing
-  - `mock` — stable fallback used by automated acceptance
-- 🖥️ **First-class management UI** — list, drill, replay every job; live event tracing.
-- 🧬 **Real-host capability** — SSH gateway, GPU snapshot, dataset scan against real remote nodes.
+- 🧩 **统一 Contract 层**——所有智能体输入输出都经过 schema 校验 + 自动修复后才落库。
+- 🔁 **可重放流水线**——`论文 → 洞察 → 数据集 → idea → 计划 → 编码评测 → 写作` 全链路可追溯。
+- 🧪 **真实实验基础设施**——直接复用阶段 2 的 `Experiment / ExperimentSpec / ExperimentRun / ResultArchive / ResultComparison`。
+- 🛠️ **持久化注册表**——tool registry、skill registry、memory store、artifact / event / job / schema 全部入库。
+- 🧷 **三种执行模式**：
+  - `api`——真实模型 API 接入位（默认关闭，受控扩展点）
+  - `codex_cli`——基于 Codex CLI 的最小联调路径
+  - `mock`——稳定兜底模式，自动验收使用
+- 🖥️ **一流的管理界面**——任务列表、详情、回放、事件流追踪。
+- 🧬 **真实主机能力**——SSH 网关、GPU 快照、远程数据集扫描全部对真实节点可用。
 
 ---
 
-## 📦 Tech Stack
+## 📦 技术栈
 
-| Layer | Tech |
+| 层 | 技术 |
 |---|---|
-| Control plane | Go · Gin · PostgreSQL |
-| Agent runtime | Python (contract + validator + executors) |
-| Frontend | Vue 3 · TypeScript · Vite · Element Plus |
-| Infra | Docker Compose · SSH · optional Codex CLI |
+| 控制面 | Go · Gin · PostgreSQL |
+| 智能体运行时 | Python（contract + validator + executors） |
+| 前端 | Vue 3 · TypeScript · Vite · Element Plus |
+| 基础设施 | Docker Compose · SSH · 可选 Codex CLI |
 
 ---
 
-## ⚡ Quickstart
+## ⚡ 快速开始
 
 ```bash
-# 1. Backend (Docker)
+# 1. 启动后端（Docker）
 docker compose up -d postgres go-backend
 
-# 2. Frontend
+# 2. 启动前端
 cd MRAG
 npm install
 npm run dev -- --host 127.0.0.1
 ```
 
-Or run the Go backend directly:
+或直接本地起 Go 后端：
 
 ```bash
 cd MRAG/backend/go
 go run ./cmd/server
 ```
 
-### Stage 3 automated acceptance
+### 阶段 3 自动验收
 
 ```powershell
 Get-Content .\MRAG\scripts\validate_stage3.sh -Raw | Invoke-Expression
 ```
 
-This covers: runtime runner, codex_cli fallback, schema validation/repair, tool/skill/memory registries, the 7-agent minimum chain, and frontend reachability.
+覆盖范围：runtime runner、codex_cli fallback、schema 校验/修复、tool/skill/memory 注册表、7 段最小智能体链路、前端 agent 页面可达性。
 
-### Wiring real model APIs (optional)
+### 接入真实模型 API（可选）
 
-Live execution is **off by default**. To enable, set in `.env` (or via `AGENT_RUNTIME_CONFIG_FILE`):
+真实执行**默认关闭**。如需启用，在 `.env` 或 `AGENT_RUNTIME_CONFIG_FILE` 中配置：
 
 ```env
 AGENT_API_ENABLED=true
@@ -140,65 +140,64 @@ AGENT_API_KEY=your-real-api-key
 
 ---
 
-## 🛣️ Stage Roadmap
+## 🛣️ 阶段路线图
 
-| Stage | Theme | Status |
+| 阶段 | 主题 | 状态 |
 |---|---|---|
-| 0 | Workspace protocol · mock workflow · Python agent script interface | ✅ |
-| 1 | Research-asset management (papers, insights, ideas, datasets, baselines, archives) | ✅ |
-| 2 | Experiment lifecycle · scheduler · heartbeat · GPU snapshot · log collector · recovery · comparison | ✅ |
-| 3 | Unified agent runtime · controlled pipeline · tool/skill/memory persistence · agent management UI · automated acceptance | ✅ |
-| 4 | Real-host live execution · richer Picture agent · open-ended coding loop | 🚧 |
+| 0 | workspace 协议 · mock workflow · Python agent 脚本接口 | ✅ |
+| 1 | 科研资产管理（论文、洞察、idea、数据集、baseline、归档） | ✅ |
+| 2 | 实验生命周期 · 调度 · 心跳 · GPU 快照 · 日志收集 · 恢复 · 对比 | ✅ |
+| 3 | 统一 agent runtime · 受控 pipeline · tool/skill/memory 持久化 · agent 管理页面 · 自动验收 | ✅ |
+| 4 | 真实主机 live execution · 更完整的 Picture 智能体 · 开放式编码闭环 | 🚧 |
 
 ---
 
-## 📂 Repository Layout
+## 📂 仓库结构
 
 ```
 .
-├── MRAG/                           # Main project
+├── MRAG/                           # 主项目
 │   ├── backend/
-│   │   ├── go/                     # Go control plane
-│   │   ├── python_agents/          # Agent runtime
-│   │   ├── python_runners/         # Experiment runners
+│   │   ├── go/                     # Go 控制面
+│   │   ├── python_agents/          # 智能体运行时
+│   │   ├── python_runners/         # 实验运行器
 │   │   └── python_templates/
-│   ├── src/                        # Vue 3 frontend
-│   ├── scripts/                    # Stage validation scripts
-│   ├── docs/                       # Stage specs, architecture, validation reports
-│   ├── workspace/                  # Runtime workspace (templates, skills, tools)
+│   ├── src/                        # Vue 3 前端
+│   ├── scripts/                    # 各阶段验收脚本
+│   ├── docs/                       # 阶段规格、架构、验收报告
+│   ├── workspace/                  # 运行时工作区（模板、技能、工具）
 │   └── docker-compose.yml
-└── README.md                       # This file
+└── README.md                       # 当前文档
 ```
 
 ---
 
-## 📜 Documentation
+## 📜 文档入口
 
-- [Stage 3 Specification](./MRAG/docs/stage3-spec.md)
-- [Stage 3 Agent Architecture](./MRAG/docs/stage3-agent-architecture.md)
-- [Stage 3 Implementation Summary](./MRAG/docs/stage3-agent-implementation-summary.md)
-- [Stage 3 Demo Notes](./MRAG/docs/stage3-demo.md)
-- [Stage 3 Validation Report](./MRAG/docs/stage3-validation-report.md)
-- [Stage 3 Known Limitations](./MRAG/docs/stage3-known-limitations.md)
-
----
-
-## 🧭 Design Boundaries
-
-These are **deliberate constraints**, not gaps:
-
-- This is a **controlled agent system**, not a fully autonomous scientist.
-- `Writer / Picture` is a minimal version; `Picture` currently rides inside `Writer`.
-- `Coding` is restricted to a unified training template — no free-form codegen training loop yet.
-- Real model APIs and real scraping are kept as **controlled extension points**, off by default.
+- [阶段 3 规格说明](./MRAG/docs/stage3-spec.md)
+- [阶段 3 架构说明](./MRAG/docs/stage3-agent-architecture.md)
+- [阶段 3 实现总结](./MRAG/docs/stage3-agent-implementation-summary.md)
+- [阶段 3 演示说明](./MRAG/docs/stage3-demo.md)
+- [阶段 3 验收报告](./MRAG/docs/stage3-validation-report.md)
+- [阶段 3 已知限制](./MRAG/docs/stage3-known-limitations.md)
 
 ---
 
-## 🤝 Contributing
+## 🧭 设计边界
 
-PRs and issues welcome. Please run `validate_stage3.sh` before submitting.
+以下是项目**有意为之**的约束，并非未完成项：
+
+- 当前是**受控智能体系统**，不是完全自治的科学家。
+- `Writer / Picture` 仍是最小版本，`Picture` 暂时并入 `Writer`。
+- `Coding` 限制在统一训练模板内，尚未放开自由代码生成式训练闭环。
+- 真实模型接入与真实抓取保留为**受控扩展点**，默认不开启。
+
+---
+
+## 🤝 参与贡献
+
+欢迎提 PR / Issue。提交前请先跑通 `validate_stage3.sh`。
 
 ---
 
 > ⚠️ **声明：项目还需进一步测试与功能性验证。**
-> *This project still requires further testing and functional validation.*
